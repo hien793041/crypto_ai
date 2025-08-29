@@ -1,0 +1,617 @@
+﻿@{
+	ViewData["Title"] = "Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-container">
+	<!-- BEGIN SIDEBAR -->
+	@await Html.PartialAsync("../Shared/_Partial_LeftSideBar.cshtml")
+	<!-- END SIDEBAR -->
+	<!-- BEGIN CONTENT -->
+	<div class="page-content-wrapper">
+		<div class="page-content">
+			
+			<!-- BEGIN PAGE HEADER-->
+			<h3 class="page-title">
+				Tiles <small>windows 8 style tiles examples</small>
+			</h3>
+			<div class="page-bar">
+				<ul class="page-breadcrumb">
+					<li>
+						<i class="fa fa-home"></i>
+						<a href="index.html">Home</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<a href="#">UI Features</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<a href="#">Tiles</a>
+					</li>
+				</ul>
+				<div class="page-toolbar">
+					<div class="btn-group pull-right">
+						<button type="button" class="btn btn-fit-height grey-salt dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true">
+							Actions <i class="fa fa-angle-down"></i>
+						</button>
+						<ul class="dropdown-menu pull-right" role="menu">
+							<li>
+								<a href="#">Action</a>
+							</li>
+							<li>
+								<a href="#">Another action</a>
+							</li>
+							<li>
+								<a href="#">Something else here</a>
+							</li>
+							<li class="divider">
+							</li>
+							<li>
+								<a href="#">Separated link</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- END PAGE HEADER-->
+			<!-- BEGIN PAGE CONTENT-->
+			<div class="tiles">
+				<div class="tile double-down bg-blue-hoki">
+					<div class="tile-body">
+						<i class="fa fa-bell-o"></i>
+					</div>
+					<div class="tile-object">
+						<div class="name">
+							Notifications
+						</div>
+						<div class="number">
+							6
+						</div>
+					</div>
+				</div>
+				<div class="tile bg-red-sunglo">
+					<div class="tile-body">
+						<i class="fa fa-calendar"></i>
+					</div>
+					<div class="tile-object">
+						<div class="name">
+							Meetings
+						</div>
+						<div class="number">
+							12
+						</div>
+					</div>
+				</div>
+				<div class="tile double selected bg-green-turquoise">
+					<div class="corner">
+					</div>
+					<div class="check">
+					</div>
+					<div class="tile-body">
+						<h4>support@metronic.com</h4>
+						<p>
+							Re: Metronic v1.2 - Project Update!
+						</p>
+						<p>
+							24 March 2013 12.30PM confirmed for the project plan update meeting...
+						</p>
+					</div>
+					<div class="tile-object">
+						<div class="name">
+							<i class="fa fa-envelope"></i>
+						</div>
+						<div class="number">
+							14
+						</div>
+					</div>
+				</div>
+				<div class="tile selected bg-yellow-saffron">
+					<div class="corner">
+					</div>
+					<div class="tile-body">
+						<i class="fa fa-user"></i>
+					</div>
+					<div class="tile-object">
+						<div class="name">
+							Members
+						</div>
+						<div class="number">
+							452
+						</div>
+					</div>
+				</div>
+				<div class="tile double bg-blue-madison">
+					<div class="tile-body">
+						<img src="../../assets/admin/pages/media/profile/photo1.jpg" alt="">
+						<h4>Announcements</h4>
+						<p>
+							Easily style icon color, size, shadow, and anything that's possible with CSS.
+						</p>
+					</div>
+					<div class="tile-object">
+						<div class="name">
+							Bob Nilson
+						</div>
+						<div class="number">
+							24 Jan 2013
+						</div>
+					</div>
+				</div>
+				<div class="tile bg-purple-studio">
+					<div class="tile-body">
+						<i class="fa fa-shopping-cart"></i>
+					</div>
+					<div class="tile-object">
+						<div class="name">
+							Orders
+						</div>
+						<div class="number">
+							121
+						</div>
+					</div>
+				</div>
+				<div class="tile image selected">
+					<div class="tile-body">
+						<img src="../../assets/admin/pages/media/gallery/image2.jpg" alt="">
+					</div>
+					<div class="tile-object">
+						<div class="name">
+							Media
+						</div>
+					</div>
+				</div>
+				<div class="tile bg-green-meadow">
+					<div class="tile-body">
+						<i class="fa fa-comments"></i>
+					</div>
+					<div class="tile-object">
+						<div class="name">
+							Feedback
+						</div>
+						<div class="number">
+							12
+						</div>
+					</div>
+				</div>
+				<div class="tile double bg-grey-cascade">
+					<div class="tile-body">
+						<img src="../../assets/admin/pages/media/profile/photo2.jpg" alt="" class="pull-right">
+						<h3>lisa_wong</h3>
+						<p>
+							I really love this theme. I look forward to check the next release!
+						</p>
+					</div>
+					<div class="tile-object">
+						<div class="name">
+							<i class="fa fa-twitter"></i>
+						</div>
+						<div class="number">
+							10:45PM, 23 Jan
+						</div>
+					</div>
+				</div>
+				<div class="tile bg-red-intense">
+					<div class="tile-body">
+						<i class="fa fa-coffee"></i>
+					</div>
+					<div class="tile-object">
+						<div class="name">
+							Meetups
+						</div>
+						<div class="number">
+							12 Jan
+						</div>
+					</div>
+				</div>
+				<div class="tile bg-green">
+					<div class="tile-body">
+						<i class="fa fa-bar-chart-o"></i>
+					</div>
+					<div class="tile-object">
+						<div class="name">
+							Reports
+						</div>
+						<div class="number">
+						</div>
+					</div>
+				</div>
+				<div class="tile bg-blue-steel">
+					<div class="tile-body">
+						<i class="fa fa-briefcase"></i>
+					</div>
+					<div class="tile-object">
+						<div class="name">
+							Documents
+						</div>
+						<div class="number">
+							124
+						</div>
+					</div>
+				</div>
+				<div class="tile image double selected">
+					<div class="tile-body">
+						<img src="../../assets/admin/pages/media/gallery/image4.jpg" alt="">
+					</div>
+					<div class="tile-object">
+						<div class="name">
+							Gallery
+						</div>
+						<div class="number">
+							124
+						</div>
+					</div>
+				</div>
+				<div class="tile bg-yellow-lemon selected">
+					<div class="corner">
+					</div>
+					<div class="check">
+					</div>
+					<div class="tile-body">
+						<i class="fa fa-cogs"></i>
+					</div>
+					<div class="tile-object">
+						<div class="name">
+							Settings
+						</div>
+					</div>
+				</div>
+				<div class="tile bg-red-sunglo">
+					<div class="tile-body">
+						<i class="fa fa-plane"></i>
+					</div>
+					<div class="tile-object">
+						<div class="name">
+							Projects
+						</div>
+						<div class="number">
+							34
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END PAGE CONTENT-->
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Begin stat blocks -->
+					<h3>Buttons</h3>
+					<div class="clearfix">
+						<!-- Standard gray button with gradient -->
+						<button type="button" class="btn blue">Default</button>
+						<a href="javascript:;" class="btn blue"><i class="fa fa-gift"></i> With icon</a>
+						<a href="javascript:;" class="btn default blue-stripe">Stripe</a>
+						<div class="btn-group">
+							<button type="button" class="btn blue">Dropdown</button>
+							<button type="button" class="btn blue dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="javascript:;">
+										Action
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										Another action
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										Something else here
+									</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a href="javascript:;">
+										Separated link
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- End stat blocks -->
+					<!-- Begin stat blocks -->
+					<h3>Texts, Font Icons, Badges, Lables</h3>
+					<div class="clearfix">
+						<table class="table table-bordered table-striped">
+							<thead>
+								<tr>
+									<th>
+										Text
+									</th>
+									<th>
+										Fontawesome Icon
+									</th>
+									<th>
+										Simple Line Icon
+									</th>
+									<th>
+										Glyphicon Icon
+									</th>
+									<th>
+										Label
+									</th>
+									<th>
+										Badges
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<span class="font-blue">Simple text</span>
+									</td>
+									<td>
+										<i class="fa fa-user font-blue">
+										</i>
+									</td>
+									<td>
+										<i class="icon-pin font-blue">
+										</i>
+									</td>
+									<td>
+										<i class="glyphicon glyphicon-cog font-blue">
+										</i>
+									</td>
+									<td>
+										<span class="label bg-blue">
+											Label
+										</span>
+									</td>
+									<td>
+										<span class="badge bg-blue">
+											7
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="font-blue">Another text</span>
+									</td>
+									<td>
+										<i class="fa fa-gears font-blue">
+										</i>
+									</td>
+									<td>
+										<i class="icon-present font-blue">
+										</i>
+									</td>
+									<td>
+										<i class="glyphicon glyphicon-trash font-blue">
+										</i>
+									</td>
+									<td>
+										<span class="label bg-blue">
+											New
+										</span>
+									</td>
+									<td>
+										<span class="badge bg-blue">
+											11
+										</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- Begin stat blocks -->
+					<h3>Statistic Blocks</h3>
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="dashboard-stat blue">
+								<div class="visual">
+									<i class="fa fa-comments"></i>
+								</div>
+								<div class="details">
+									<div class="number">
+										1349
+									</div>
+									<div class="desc">
+										New Feedbacks
+									</div>
+								</div>
+								<a class="more" href="javascript:;">
+									View more <i class="m-icon-swapright m-icon-white"></i>
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="dashboard-stat blue">
+								<div class="visual">
+									<i class="fa fa-shopping-cart"></i>
+								</div>
+								<div class="details">
+									<div class="number">
+										549
+									</div>
+									<div class="desc">
+										New Orders
+									</div>
+								</div>
+								<a class="more" href="javascript:;">
+									View more <i class="m-icon-swapright m-icon-white"></i>
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="dashboard-stat blue">
+								<div class="visual">
+									<i class="fa fa-globe"></i>
+								</div>
+								<div class="details">
+									<div class="number">
+										+89%
+									</div>
+									<div class="desc">
+										Brand Popularity
+									</div>
+								</div>
+								<a class="more" href="javascript:;">
+									View more <i class="m-icon-swapright m-icon-white"></i>
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="dashboard-stat blue">
+								<div class="visual">
+									<i class="fa fa-bar-chart-o"></i>
+								</div>
+								<div class="details">
+									<div class="number">
+										12,5M$
+									</div>
+									<div class="desc">
+										Total Profit
+									</div>
+								</div>
+								<a class="more" href="javascript:;">
+									View more <i class="m-icon-swapright m-icon-white"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- End stat blocks -->
+					<!-- Begin Tiles -->
+					<h3>Tiles</h3>
+					<div class="tiles">
+						<div class="tile bg-blue">
+							<div class="tile-body">
+								<i class="fa fa-bar-chart-o"></i>
+							</div>
+							<div class="tile-object">
+								<div class="name">
+									Reports
+								</div>
+								<div class="number">
+								</div>
+							</div>
+						</div>
+						<div class="tile bg-blue">
+							<div class="tile-body">
+								<i class="fa fa-briefcase"></i>
+							</div>
+							<div class="tile-object">
+								<div class="name">
+									Documents
+								</div>
+								<div class="number">
+									124
+								</div>
+							</div>
+						</div>
+						<div class="tile image double selected">
+							<div class="tile-body">
+								<img src="../../assets/admin/pages/media/gallery/image4.jpg" alt="">
+							</div>
+							<div class="tile-object">
+								<div class="name">
+									Gallery
+								</div>
+								<div class="number">
+									124
+								</div>
+							</div>
+						</div>
+						<div class="tile bg-blue selected">
+							<div class="corner">
+							</div>
+							<div class="check">
+							</div>
+							<div class="tile-body">
+								<i class="fa fa-cogs"></i>
+							</div>
+							<div class="tile-object">
+								<div class="name">
+									Settings
+								</div>
+							</div>
+						</div>
+						<div class="tile bg-blue">
+							<div class="tile-body">
+								<i class="fa fa-plane"></i>
+							</div>
+							<div class="tile-object">
+								<div class="name">
+									Projects
+								</div>
+								<div class="number">
+									34
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End tiles -->
+					<!-- Begin portlet samples -->
+					<h3>Portlets</h3>
+					<div class="portlet box blue">
+						<div class="portlet-title">
+							<div class="caption">
+								<i class="fa fa-gift"></i>Portlet
+							</div>
+							<div class="tools">
+								<a href="javascript:;" class="collapse">
+								</a>
+								<a href="#portlet-config" data-toggle="modal" class="config">
+								</a>
+								<a href="javascript:;" class="reload">
+								</a>
+							</div>
+						</div>
+						<div class="portlet-body">
+							<p>
+								Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.
+							</p>
+							<p>
+								Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.
+							</p>
+						</div>
+					</div>
+					<div class="portlet solid blue">
+						<div class="portlet-title">
+							<div class="caption">
+								<i class="fa fa-gift"></i>Portlet
+							</div>
+							<div class="tools">
+								<a href="javascript:;" class="collapse">
+								</a>
+								<a href="#portlet-config" data-toggle="modal" class="config">
+								</a>
+								<a href="javascript:;" class="reload">
+								</a>
+							</div>
+						</div>
+						<div class="portlet-body">
+							<p>
+								Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.
+							</p>
+							<p>
+								Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.
+							</p>
+						</div>
+					</div>
+					<!-- End portlet samples -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END CONTENT -->
+	<!-- BEGIN QUICK SIDEBAR -->
+	@await Html.PartialAsync("../Shared/_Partial_QuickSideBar.cshtml")
+	<!-- END QUICK SIDEBAR -->
+</div>
+
+<script src="/assets/admin/pages/scripts/portlet-draggable.js"></script>
+
+<script>
+	$('#mnDashboard').addClass("active");
+
+	jQuery(document).ready(function () {
+		// // initiate layout and plugins
+		// Metronic.init(); // init metronic core components
+		// Layout.init(); // init current layout
+		// QuickSidebar.init(); // init quick sidebar
+		// Demo.init(); // init demo features
+		PortletDraggable.init();
+	});
+
+</script>

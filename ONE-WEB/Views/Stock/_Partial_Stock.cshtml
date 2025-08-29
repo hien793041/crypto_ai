@@ -1,0 +1,722 @@
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
+
+<style>
+	.table-striped > tbody > tr:nth-of-type(2n+1) {
+		background-color: #f9f9f9 !important;
+	}
+
+	.form .form-section-2 {
+		margin: 5px 0px 5px 0px;
+		border-top: 1px solid #eee;
+		padding-top: 7px;
+	}
+
+	.list-unstyled{
+		margin-bottom: 0px !important;
+		padding-top: 5px;
+	}
+
+	.list-unstyled > li{
+		padding-bottom: 5px;
+	}
+
+	.price-default {
+		width: 100px;
+		text-align: right;
+		float: right;
+		font-weight: 600;
+	}
+
+	.biendo {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: table;
+		width: 100%;
+	}
+
+	.biendo li {
+		text-align: center;
+		display: table-cell;
+	}
+
+	.checked {
+		color: orange;
+	}
+
+	.fa-star{
+		font-size:20px;
+	}
+
+	.nav-tabs > li {
+		margin-bottom: 3px !important;
+	}
+
+	#tab_so_lenh .clone-head-table-wrap > table {
+		max-width: none !important;
+	}
+</style>
+
+<div class="modal fade draggable-modal" id="Popup_Stock" tabindex="-1" role="basic" aria-hidden="true">
+	<div class="modal-dialog modal-full" style="width:50%;height:auto;overflow:clip">
+		<div class="modal-content" style="height:100%">
+			<div class="modal-header" style="padding: 5px;">
+				<div class="row">
+					<div class="col-md-9 col-sm-12">
+						<h5 class="modal-title" style="font-weight: 700;">THÔNG TIN CỔ PHIẾU</h5>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						@* <button type="button" ng-click="submitted=true; AddTopic()" class="btn blue" style="text-transform: uppercase;">Yêu cầu tư vấn</button> *@
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="margin: 10px 10px 0px 0px !important;" ng-click="CloseStock()"></button>
+					</div>
+				</div>
+				@* <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+				<h4 class="modal-title" style="font-weight: 700;">{{ActiveStock.Code}}</h4> *@
+			</div>
+			<div class="modal-body" style="height: calc(100% - 80px) !important;overflow:auto; padding-top: 5px;padding-bottom: 0px;">
+				<div class="row">
+					<div class="col-xs-7">
+						<h4 style="font-weight: 700;">{{StockData.Name}}</h4>
+						<span style="font-size:17px">Mã:&nbsp;</span><span style="font-size:17px;font-weight:700; color:#5b9bd1">{{ActiveStock.Code}}</span> &nbsp;&nbsp;<span style="font-size:17px">Sàn:&nbsp;</span> <span style="font-size:17px; font-weight:700; color:#5b9bd1">HSX</span>
+						<p style="padding-top: 8px;">Ngành: {{StockData.Industry}}</p>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<div class="tabbable-line tabbable-full-width" style="padding-top: 10px;">
+							<ul class="nav nav-tabs">
+								<li class="active" style="margin-right: 15px !important;">
+									<a href="#tab_tong_quan" data-toggle="tab" style="padding: 5px 0px !important;">
+										Tổng quan
+									</a>
+								</li>
+								<li style="margin-right: 15px !important;">
+									<a href="#tab_phan_tich" data-toggle="tab" style="padding: 5px 0px !important;">
+										Phân tích
+									</a>
+								</li>
+								<li style="margin-right: 15px !important;">
+									<a href="#tab_1_3" data-toggle="tab" style="padding: 5px 0px !important;">
+										Tài chính
+									</a>
+								</li>
+								<li style="margin-right: 15px !important;">
+									<a href="#tab_so_lenh" data-toggle="tab" style="padding: 5px 0px !important;">
+										Sổ lệnh
+									</a>
+								</li>
+								<li style="margin-right: 15px !important;">
+									<a href="#tab_ho_so" data-toggle="tab" style="padding: 5px 0px !important;">
+										Hồ sơ
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-5">
+						<ul class="list-unstyled">
+							<li>
+								<div class="row">
+									<div class="col-md-6">
+										<span>
+											<span style="font-size:18px; font-weight:700" ng-class="GetClassIndex(StockData.LastMatchedPx - StockData.RefPx)">{{ StockData.LastMatchedPx | number | formatNumber}}</span>
+											<span style="white-space: pre-line; float:none !important" class="price-default" ng-class="GetClassIndex(StockData.LastMatchedPx - StockData.RefPx)">
+												{{StockData.LastMatchedPx - StockData.RefPx > 0 ? '+' : ''}}{{StockData.LastMatchedPx - StockData.RefPx | number | formatNumber}} ({{StockData.LastMatchedPx - StockData.RefPx > 0 ? '+' : ''}}{{ (StockData.LastMatchedPx - StockData.RefPx)/StockData.RefPx*100 | number:2 | formatNumber}}%)
+											</span>
+										</span>
+									</div>
+									<div class="col-md-6" style="padding-left: 0px;">
+										<span style="float:right; position: relative;">
+											<span style="width: 100%; text-align: end;line-height: 25px;">
+												KLGD: {{StockData.TotalTradedVol/1000000 | number:2 | formatNumber : 'vi-VN'}} tr
+											</span>
+											<span style="white-space: pre-line;width: 100%; text-align: end;">
+												GTGD: {{StockData.TotalTradedVal/1000000000 | number:2 | formatNumber : 'vi-VN'}} tỷ
+											</span>
+										</span>
+									</div>
+								</div>
+								
+								@* <p style="width:100px;text-align:right;float:right; font-weight:600">
+									<span>{{ ActiveStock.CurrentPrice | number | formatNumber}}</span>
+									<span style="white-space: pre-line;" ng-class="GetClassIndex(ActiveStock.CurrentPrice - ActiveStock.BuyPrice)">
+										{{ActiveStock.CurrentPrice - ActiveStock.BuyPrice > 0 ? '+' : ''}}{{ActiveStock.CurrentPrice - ActiveStock.BuyPrice | number | formatNumber}} / {{ActiveStock.CurrentPrice - ActiveStock.BuyPrice > 0 ? '+' : ''}}{{ (ActiveStock.CurrentPrice - ActiveStock.BuyPrice)/ActiveStock.BuyPrice*100 | number:2 | formatNumber}}%
+									</span>
+								</p> *@
+							</li>
+							<li>
+								<span>Biên độ ngày</span>
+								<ul class="biendo">
+									<li style="font-weight: 600;" ng-class="GetClassIndex(StockData.LowPx - StockData.RefPx)">{{StockData.LowPx | number:0 | formatNumber : 'vi-VN'}}</li>
+									<li style="width: 100%;padding: 0 5px 0 5px;">
+										<div class="slidecontainer">
+											<input type="range" min="{{StockData.LowPx}}" max="{{StockData.HighPx}}" value="{{StockData.LastMatchedPx}}" class="slider-stock-2" id="myRangeBienDoNgay">
+										</div>
+									</li>
+									<li style="font-weight: 600;" ng-class="GetClassIndex(StockData.HighPx - StockData.RefPx)">{{StockData.HighPx | number:0 | formatNumber : 'vi-VN'}}</li>
+								</ul>
+							</li>
+							<li>
+								<span>Biên độ 52 tuần</span>
+								<ul class="biendo">
+									<li style="font-weight: 600;">{{StockData.Min52WPx | number:0 | formatNumber : 'vi-VN'}}</li>
+									<li style="width: 100%;padding: 0 5px 0 5px;">
+										<div class="slidecontainer">
+											<input type="range" min="{{StockData.Min52WPx}}" max="{{StockData.Max52WPx}}" value="{{StockData.LastMatchedPx}}" class="slider-stock-2" id="myRangeBienDo52T">
+										</div>
+									</li>
+									<li style="font-weight: 600;">{{StockData.Max52WPx | number:0 | formatNumber : 'vi-VN'}}</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<!--BEGIN TABS-->
+						<div class="tabbable-line tabbable-full-width">
+							<div class="tab-content" style="padding-bottom: 0px;border-top: 0px solid #eee;">
+								<div class="tab-pane active" id="tab_tong_quan">
+									<div class="row" style="margin-right: -8px;  margin-left: -8px;">
+										<div id="tong_quan_left" class="col-md-4  form" style="padding-right: 6px !important;">
+											<form action="#" class="horizontal-form" style="border: 1px solid #eee;border-bottom: 0px solid;">
+												<div class="form-body" style="padding-top: 0px;">
+													<h5 class="form-section-2" style="font-weight:700;margin-top: 0 !important;border-top: 0px solid #eee;">Sức khỏe tài chính</h5>
+													<div class="" style="padding-top: 25px;padding-bottom: 5px;">
+														<div class="multistepSlider">
+															<section class="bars-container">
+																<div class="loading-bar"></div>
+																<div class="loading-bar"></div>
+																<div class="loading-bar"></div>
+																<div class="loading-bar"></div>
+																<div class="loading-bar"></div>
+															</section>
+															<div class="slidecontainer">
+																<span style="position:absolute; color:#222; background-color: #aaa235; border:0px solid blue;padding: 2px;top: -35px;margin-left: -3px;">
+																	<span id="myValue"></span>
+																</span>
+																<input type="range" min="1" max="100" value="50" class="slider-stock" id="myRange">
+															</div>
+														</div>
+													</div>
+													<!--/row-->
+													<h5 class="form-section-2" style="font-weight:700">Giá trị hợp lý</h5>
+													<div class="row">
+														<div class="col-md-12">
+															<span style="font-size: 15px;font-weight: 700 !important; color: #d98407;">
+																Hợp lý
+															</span>
+															<ul class="list-unstyled">
+																<li>
+																	<span>Giá trị hợp lý</span>
+																	<span class="price-default" style="float:right">{{ 39789 | number | formatNumber}}</span>
+																</li>
+																<li>
+																	<span>Tăng lên</span>
+																	<span class="price-default" style="float:right" ng-class="GetClassIndex(11.32)">+11.32%</span>
+																</li>																
+															</ul>
+														</div>
+													</div>
+													<!--/row-->
+													<h5 class="form-section-2" style="font-weight:700">Phân tích Kỹ thuật</h5>
+													<div class="row">
+														<div class="col-md-12 ">
+															<ul class="list-unstyled" style="padding-top: 0px;">
+																<li>
+																	<span style="font-size: 15px;font-weight: 700 !important; color: #007e3e;height: 100%; position: absolute;align-content: end;">
+																		Tăng mạnh
+																	</span>
+																	<div id="chart_rsi_symbol" style="width:90px; height:55px;float:right;margin-top: -25px;">
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<!--/row-->
+													<h5 class="form-section-2" style="font-weight:700">Quan điểm chuyên gia</h5>
+													<div class="row">
+														<div class="col-md-12">
+															<span style="font-size: 15px;font-weight: 700 !important; color: #007e3e;">
+																Mua
+															</span>
+															<ul class="list-unstyled">
+																<li>
+																	<span>Giá trị mục tiêu</span>
+																	<span class="price-default" style="float:right">{{ 39789 | number | formatNumber}}</span>
+																</li>
+																<li>
+																	<span>Tăng lên</span>
+																	<span class="price-default" style="float:right" ng-class="GetClassIndex(7.32)">+7.32%</span>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<!--/row-->
+													<h5 class="form-section-2" style="font-weight:700">Mức độ biến động</h5>
+													<div class="row">
+														<div class="col-md-12">
+															<span style="font-size: 15px; font-weight: 700 !important; color: #aaa235">
+																Trung bình
+															</span>
+															<ul class="list-unstyled">
+																<li>
+																	<span>Beta</span>
+																	<span style="float:right">{{ 1.1 | number | formatNumber}}</span>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<!--/row-->
+													<h5 class="form-section-2" style="font-weight:700">Tính thanh khoản</h5>
+													<div class="row">
+														<div class="col-md-12 ">
+															<span style="font-size: 15px; font-weight: 700 !important;">
+																Rất cao
+															</span>
+															<ul class="list-unstyled">
+																<li>
+																	<span>GTGD TB 30 ngày</span>
+																	<span style="float:right">{{StockData.Avg30DayVal | number:2 | formatNumber : 'vi-VN'}} tỷ/ngày</span>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+										<div id="tong_quan_right" class="col-md-8" style="border: 1px solid #eee; border-bottom: 0px solid; padding-left: 0px; padding-right: 0px;">
+											<div id="tv_chart_symbol"></div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab_phan_tich">
+									<div class="row">
+										<div class="col-md-4 col-sm-4">
+											<ul class="nav nav-pills">
+												<li class="active">
+													<a href="#tab_tong_hop" data-toggle="tab" style="padding: 10px 15px !important;">
+														Tổng hợp
+													</a>
+												</li>
+												<li>
+													<a href="#tab_so_lenh2" data-toggle="tab" style="padding: 10px 15px !important;">
+														Sổ lệnh
+													</a>
+												</li>
+											</ul>
+											<div class="tab-content">
+												<div class="tab-pane fade active in" id="tab_tong_hop">
+													<table class="table table-striped table-hover">
+														<tbody>
+															<tr>
+																<td>
+																	Tham chiếu | Mở cửa
+																</td>
+																<td style="padding-right: 0px !important;  padding-left: 0px !important;text-align:right">
+																	<span ng-class="GetClassIndex(StockData.RefPx - StockData.RefPx)">{{StockData.RefPx | number:0 | formatNumber : 'vi-VN'}}</span> |
+																	<span ng-class="GetClassIndex(StockData.OpenPx - StockData.RefPx)">{{StockData.OpenPx | number:0 | formatNumber : 'vi-VN'}}</span>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	Cao | Thấp
+																</td>
+																<td style="padding-right: 0px !important;  padding-left: 0px !important;text-align:right">
+																	<span ng-class="GetClassIndex(StockData.HighPx - StockData.RefPx)">{{StockData.HighPx | number:0 | formatNumber : 'vi-VN'}}</span> |
+																	<span ng-class="GetClassIndex(StockData.LowPx - StockData.RefPx)">{{StockData.LowPx | number:0 | formatNumber : 'vi-VN'}}</span>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	KLGD
+																</td>
+																<td style="text-align:right">
+																	{{StockData.Vol | number:0 | formatNumber : 'vi-VN'}}
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	KLGD TB 20 ngày
+																</td>
+																<td style="text-align:right">
+																	{{StockData.Avg20DayVol | number:2 | formatNumber : 'vi-VN'}}
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	GTGD
+																</td>
+																<td style="text-align:right">
+																	{{StockData.Val | number:0 | formatNumber : 'vi-VN'}}
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	Vốn hóa
+																</td>
+																<td style="text-align:right">
+																	{{StockData.ListedVol*StockData.LastMatchedPx | number:0 | formatNumber : 'vi-VN'}}
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	Giá trị hợp lý
+																</td>
+																<td>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	Sức khỏe tài chính
+																</td>
+																<td>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	Mức độ biến động
+																</td>
+																<td>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+													<div id="chart_gauge_adx_rsi" style="width:240px;height:150px;">
+													</div>
+													<table style="width:100%; max-width:500px;" cellpadding="5" cellspacing="5">
+														<tr style="line-height:2;border-bottom: 1px solid #ddd;">
+															<td style="text-align:left">Hourly</td>
+															<td style="text-align:center">Daily</td>
+															<td style="text-align:right">Weekly</td>
+														</tr>
+														<tr style="line-height:2">
+															<td style="text-align:left;font-weight: 600;text-transform: uppercase;">{{TradingIndex.Trend.T1}}</td>
+															<td style="text-align:center;font-weight: 600;text-transform: uppercase;">{{TradingIndex.Trend.T1}}</td>
+															<td style="text-align:right;font-weight: 600;text-transform: uppercase;">{{TradingIndex.Trend.T1}}</td>
+														</tr>
+													</table>
+												</div>
+												<div class="tab-pane fade" id="tab_so_lenh2">
+													Sổ lệnh
+												</div>
+											</div>
+										</div>
+										<div class="todo-tasklist-devider">
+										</div>
+										<div class="col-md-8 col-sm-8">
+											<div id="chart_Forecast" style="height:250px;">
+											</div>
+											<table class="table table-striped table-hover">
+												<thead>
+													<tr>
+														<th>
+															Mục tiêu
+														</th>
+														<th>
+															Thấp nhất
+														</th>
+														<th class="hidden-480">
+															Trung bình
+														</th>
+														<th class="hidden-480">
+															Trung vị
+														</th>
+														<th class="hidden-480">
+															Cao nhất
+														</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>
+															Giá
+														</td>
+														<td>
+															180.000
+														</td>
+														<td>
+															242.000
+														</td>
+														<td>
+															250.000
+														</td>
+														<td>
+															325.000
+														</td>
+													</tr>
+													<tr>
+														<td>
+															Thay đổi
+														</td>
+														<td>
+															-26.04%
+														</td>
+														<td>
+															-0.42%
+														</td>
+														<td>
+															-2.73%
+														</td>
+														<td>
+															+33.55%
+														</td>
+													</tr>
+												</tbody>
+											</table>
+											<ul class="nav nav-pills">
+												<li class="active">
+													<a href="#tab_nhan_dinh" data-toggle="tab" style="padding: 10px 15px !important;">
+														Nhận định
+													</a>
+												</li>
+												<li>
+													<a href="#tab_bao_cao" data-toggle="tab" style="padding: 10px 15px !important;">
+														Báo cáo
+													</a>
+												</li>
+											</ul>
+											<div class="tab-content">
+												<div class="tab-pane fade active in" id="tab_nhan_dinh">
+													<table class="table table-striped table-hover">
+														<thead>
+															<tr>
+																<th>
+																	Ngày
+																</th>
+																<th>
+																	Tiêu đề
+																</th>
+																<th class="hidden-480">
+																	Nguồn
+																</th>
+																<th class="hidden-480">
+																	Mã CK liên quan
+																</th>
+																<th class="hidden-480">
+																	Tải về
+																</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr ng-repeat="x in AnalysisReport">
+																<td>
+																	{{x.DateReport | date: 'dd/MM/yyyy'}}
+																</td>
+																<td>
+																	{{x.Title}}
+																</td>
+																<td>
+																	{{x.Source}}
+																</td>
+																<td>
+																	{{x.RelatedCode}}
+																</td>
+																<td>
+																	<a target="_blank" href="https://cafef1.mediacdn.vn/Images/Uploaded/DuLieuDownload/PhanTichBaoCao/{{x.FileName}}"><img src="~/assets/global/img/iconAdobe.jpg" /></a>
+																</td>
+															</tr>
+
+														</tbody>
+													</table>
+												</div>
+												<div class="tab-pane fade" id="tab_bao_cao">
+													Báo cáo
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--tab_1_2-->
+								<div class="tab-pane" id="tab_1_3">
+									
+								</div>
+								<!--end tab-pane-->
+								<!--end tab-pane-->
+								<div class="tab-pane" id="tab_so_lenh">
+									<div class="col-md-6  form" style="padding-right: 6px !important;">
+										<div class="table-scrollable" style="margin-top: 0px !important;">
+											<table class="table table-condensed table-striped table-hover">
+												<thead>
+													<tr>
+														<th colspan="2" style="text-align:right">
+															Đặt mua
+														</th>
+														<th colspan="2" style="text-align:left">
+															Đặt bán
+														</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td style="text-align:left" ng-class="GetClassIndex(StockData.BestBidPx1 - StockData.RefPx)">
+															<span ng-if="StockData.BestBidVol1 > 0">{{StockData.BestBidVol1 | number:0 | formatNumber : 'vi-VN'}}</span>
+														</td>
+														<td style="text-align:right" ng-class="GetClassIndex(StockData.BestBidPx1 - StockData.RefPx)">
+															<span ng-if="StockData.BestBidPx1 > 0">{{StockData.BestBidPx1 | number:0 | formatNumber : 'vi-VN'}}</span>
+														</td>
+														<td style="text-align:left" ng-class="GetClassIndex(StockData.BestAskPx1 - StockData.RefPx)">
+															<span ng-if="StockData.BestAskPx1 > 0">{{StockData.BestAskPx1 | number:0 | formatNumber : 'vi-VN'}}</span>
+														</td>
+														<td style="text-align:right" ng-class="GetClassIndex(StockData.BestAskPx1 - StockData.RefPx)">
+															<span ng-if="StockData.BestAskVol1 > 0">{{StockData.BestAskVol1 | number:0 | formatNumber : 'vi-VN'}}</span>
+														</td>
+													</tr>
+													<tr>
+														<td style="text-align:left" ng-class="GetClassIndex(StockData.BestBidPx2 - StockData.RefPx)">
+															<span ng-if="StockData.BestBidVol2 > 0">{{StockData.BestBidVol2 | number:0 | formatNumber : 'vi-VN'}}</span>
+														</td>
+														<td style="text-align:right" ng-class="GetClassIndex(StockData.BestBidPx2 - StockData.RefPx)">
+															<span ng-if="StockData.BestBidPx2 > 0">{{StockData.BestBidPx2 | number:0 | formatNumber : 'vi-VN'}}</span>
+														</td>
+														<td style="text-align:left" ng-class="GetClassIndex(StockData.BestAskPx2 - StockData.RefPx)">
+															<span ng-if="StockData.BestAskPx2 > 0">{{StockData.BestAskPx2 | number:0 | formatNumber : 'vi-VN'}}</span>
+														</td>
+														<td style="text-align:right" ng-class="GetClassIndex(StockData.BestAskPx2 - StockData.RefPx)">
+															<span ng-if="StockData.BestAskVol2 > 0">{{StockData.BestAskVol2 | number:0 | formatNumber : 'vi-VN'}}</span>
+														</td>
+													</tr>
+													<tr>
+														<td style="text-align:left" ng-class="GetClassIndex(StockData.BestBidPx3 - StockData.RefPx)">
+															<span ng-if="StockData.BestBidVol3 > 0">{{StockData.BestBidVol3 | number:0 | formatNumber : 'vi-VN'}}</span>
+														</td>
+														<td style="text-align:right" ng-class="GetClassIndex(StockData.BestBidPx3 - StockData.RefPx)">
+															<span ng-if="StockData.BestBidPx3 > 0">{{StockData.BestBidPx3 | number:0 | formatNumber : 'vi-VN'}}</span>
+														</td>
+														<td style="text-align:left" ng-class="GetClassIndex(StockData.BestAskPx3 - StockData.RefPx)">
+															<span ng-if="StockData.BestAskPx3 > 0">{{StockData.BestAskPx3 | number:0 | formatNumber : 'vi-VN'}}</span>
+														</td>
+														<td style="text-align:right" ng-class="GetClassIndex(StockData.BestAskPx3 - StockData.RefPx)">
+															<span ng-if="StockData.BestAskVol3 > 0">{{StockData.BestAskVol3 | number:0 | formatNumber : 'vi-VN'}}</span>
+														</td>
+													</tr>
+													
+												</tbody>
+											</table>
+										</div>
+										
+										<div class="table-scrollable" style="max-height:300px;overflow-y: auto;">
+											<table id="tblTickData" class="table table-striped table-condensed table-hover">
+												<thead>
+													<tr>
+														<th style="width:15px">
+															Khớp
+														</th>
+														<th style="width:15px">
+															Giá
+														</th>
+														<th style="width:10px">
+															+/-
+														</th>
+														<th style="width:10px">
+															KL
+														</th>
+														<th style="width:15px">
+															M/B
+														</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr ng-repeat="x in TickData" ng-class="GetClassIndex(StockData.LastMatchedPx  - StockData.RefPx)">
+														<td>
+															{{x.TradingDate | date: 'HH:mm:ss'}}
+														</td>
+														<td style="text-align:right">
+															{{x.ClosePx | number:0 | formatNumber : 'vi-VN'}}
+														</td>
+														<td>
+															{{x.ClosePx - x.RefPx > 0 ? '+' : ''}}{{ (x.ClosePx - x.RefPx)/x.RefPx*100 | number:2 | formatNumber : 'vi-VN'}}
+														</td>
+														<td style="text-align:right">
+															{{x.Vol | number:0 | formatNumber : 'vi-VN'}}
+														</td>
+														<td style="text-align:center">
+															{{x.Side == 1 ? "B" : "S"}}
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<div class="table-scrollable">
+											<table class="table table-condensed table-striped table-hover">
+												<tbody>
+													<tr>
+														<td>
+															Tổng KL Khớp
+														</td>
+														<td>
+															{{StockData.TotalTradedVol | number:0 | formatNumber : 'vi-VN'}}
+														</td>
+														<td>
+															
+														</td>
+													</tr>
+													<tr>
+														<td>
+															KL MUA chủ động
+														</td>
+														<td>
+															{{StockData.BuyVol | number:0 | formatNumber : 'vi-VN'}}
+														</td>
+														<td>
+															M
+														</td>
+													</tr>
+													<tr>
+														<td>
+															KL BÁN chủ động
+														</td>
+														<td>
+															{{StockData.SellVol | number:0 | formatNumber : 'vi-VN'}}
+														</td>
+														<td>
+															B
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-md-6" style="border: 1px solid #eee; border-bottom: 0px solid; padding-left: 0px; padding-right: 0px;">
+										
+									</div>
+
+								</div>
+								<!--end tab-pane-->
+								<div class="tab-pane" id="tab_ho_so">
+								</div>
+								<!--end tab-pane-->
+							</div>
+						</div>
+						<!--END TABS-->
+
+					</div>
+					<!-- END PAGE CONTENT-->
+				</div>
+				
+			</div>
+			<div class="modal-footer" style="padding: 8px 10px 8px 10px !important;">
+				<button type="button" class="btn btn-sm default" data-dismiss="modal" ng-click="CloseStock()">@ONE_WEB.Resources.MyResources.GetResourceByKey("Close", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</button>
+				<button type="button" ng-click="submitted=true; AddTopic()" class="btn btn-sm blue" style="text-transform: uppercase;">Yêu cầu tư vấn</button>
+			</div>
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+
+
+<script>
+	jQuery(document).ready(function () {
+		// $("#tblTickData").fixedHeaderTable({
+			
+		// });
+
+		// $(".table-scrollable").freezeTable({
+		// 	'scrollable': true,
+		// });
+	});	
+
+</script>

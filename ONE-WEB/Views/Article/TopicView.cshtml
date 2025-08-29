@@ -1,0 +1,375 @@
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
+
+<link href="~/assets/admin/pages/css/news.css" rel="stylesheet" type="text/css" />
+<link href="~/assets/global/plugins/bootstrap-summernote/summernote.css" rel="stylesheet" type="text/css" />
+
+<style>
+	.feeds li .col1 > .cont > .cont-col2 > .desc > a {
+		color: #333 !important;
+	}
+
+	.feeds li .col1 > .cont > .cont-col1 > .label {
+	  padding: 2px 1px 2px 1px !important;
+	}
+
+	.feeds li .col1 > .cont > .cont-col1 > .label-sm {
+	  padding-top: 4px !important;
+	}
+
+	.feeds li .col1 > .cont > .cont-col2 > .desc {
+	  margin-left: 25px !important;
+	}
+
+</style>
+<!-- BEGIN CONTAINER -->
+<div class="page-container" ng-cloak>
+	<!-- BEGIN SIDEBAR -->
+	@await Html.PartialAsync("../Shared/_Partial_SideBar.cshtml")
+	<!-- END SIDEBAR -->
+	<!-- BEGIN CONTENT -->
+	<div class="page-content-wrapper">
+		<div class="page-content">
+			<!-- BEGIN STYLE CUSTOMIZER -->
+			@await Html.PartialAsync("../Shared/_Partial_StyleCustomizer.cshtml")
+			<!-- END STYLE CUSTOMIZER -->
+			<!-- BEGIN PAGE HEADER-->
+			<h3 class="page-title">
+				{{TopicName}}
+			</h3>
+			<div class="page-bar">
+				<ul class="page-breadcrumb">
+					<li>
+						<i class="fa fa-home"></i>
+						<a href="index.html">Home</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<a href="#">Pages</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<a href="/Article/Topic">Topic</a>
+					</li>
+				</ul>
+				<div class="page-toolbar">
+					<div class="btn-group pull-right">
+						<button type="button" class="btn btn-fit-height grey-salt dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true">
+							Actions <i class="fa fa-angle-down"></i>
+						</button>
+						<ul class="dropdown-menu pull-right" role="menu">
+							<li>
+								<a data-toggle="modal" href="#Popup_AddTopic">
+									<i class="fa fa-plus"></i>
+									@ONE_WEB.Resources.MyResources.GetResourceByKey("AddArticle", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)
+								</a>
+							</li>
+							<li>
+								<a href="#">Another action</a>
+							</li>
+							<li>
+								<a href="#">Something else here</a>
+							</li>
+							<li class="divider">
+							</li>
+							<li>
+								<a href="/Article/Topic">Topic</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- END PAGE HEADER-->
+			<!-- BEGIN PAGE CONTENT-->
+			<div class="row">
+				<div class="col-md-12 news-page">
+					@*<h1>Danh mục</h1>*@
+					<div class="row">
+						<div class="col-md-12 news-page blog-page">
+							<div class="row">
+								<div class="col-md-9 blog-tag-data">
+									<h3>{{Article.Title}}</h3>
+									
+									<div class="row">
+										<div class="col-md-6">
+											<ul class="list-inline blog-tags">
+												<li>
+													<a data-toggle="modal" href="#Popup_EditTopic" ng-click="ShowEditArticle()">
+														<i class="fa fa-pencil"></i> Edit
+													</a>
+													<a href="javascript:;">
+														Technology
+													</a>
+													<a href="javascript:;">
+														Education
+													</a>
+													<a href="javascript:;">
+														Internet
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="col-md-6 blog-tag-data-inner">
+											<ul class="list-inline">
+												<li>
+													<i class="fa fa-calendar"></i>
+													<a href="javascript:;">
+														{{Article.DateCreated | date: 'dd-MM-yyyy HH:mm'}}
+													</a>
+												</li>
+												<li>
+													<i class="fa fa-comments"></i>
+													<a href="javascript:;">
+														38 Comments
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="news-item-page" ng-bind-html="Article.Content | trust">
+										
+									</div>
+									<hr>
+									<div class="media">
+										<h3>Comments</h3>
+										<a href="javascript:;" class="pull-left">
+											<img alt="" src="../../assets/admin/pages/media/blog/9.jpg" class="media-object">
+										</a>
+										<div class="media-body">
+											<h4 class="media-heading">
+												Media heading <span>
+													5 hours ago / <a href="javascript:;">
+														Reply
+													</a>
+												</span>
+											</h4>
+											<p>
+												Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+											</p>
+											<hr>
+											<!-- Nested media object -->
+											<div class="media">
+												<a href="javascript:;" class="pull-left">
+													<img alt="" src="../../assets/admin/pages/media/blog/5.jpg" class="media-object">
+												</a>
+												<div class="media-body">
+													<h4 class="media-heading">
+														Media heading <span>
+															17 hours ago / <a href="javascript:;">
+																Reply
+															</a>
+														</span>
+													</h4>
+													<p>
+														Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+													</p>
+												</div>
+											</div>
+											<!--end media-->
+											<hr>
+											<div class="media">
+												<a href="javascript:;" class="pull-left">
+													<img alt="" src="../../assets/admin/pages/media/blog/7.jpg" class="media-object">
+												</a>
+												<div class="media-body">
+													<h4 class="media-heading">
+														Media heading <span>
+															2 days ago / <a href="javascript:;">
+																Reply
+															</a>
+														</span>
+													</h4>
+													<p>
+														Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+													</p>
+												</div>
+											</div>
+											<!--end media-->
+										</div>
+									</div>
+									<!--end media-->
+									<div class="media">
+										<a href="javascript:;" class="pull-left">
+											<img alt="" src="../../assets/admin/pages/media/blog/6.jpg" class="media-object">
+										</a>
+										<div class="media-body">
+											<h4 class="media-heading">
+												Media heading <span>
+													July 5,2013 / <a href="javascript:;">
+														Reply
+													</a>
+												</span>
+											</h4>
+											<p>
+												Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+											</p>
+										</div>
+									</div>
+									<!--end media-->
+									<hr>
+									<div class="post-comment">
+										<h3>Leave a Comment</h3>
+										<form role="form" action="#">
+											<div class="form-group">
+												<label class="control-label">
+													Message <span class="required">
+														*
+													</span>
+												</label>
+												<textarea class="col-md-10 form-control" rows="8"></textarea>
+											</div>
+											<button class="margin-top-20 btn blue" type="submit">Post a Comment</button>
+										</form>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<h3>News Feeds</h3>
+									<ul class="feeds">
+										<li ng-repeat="x in Articles">
+											<div class="col1">
+												<div class="cont">
+													<div class="cont-col1">
+														<div class="label-sm">
+															<i class="fa fa-check"></i>
+														</div>
+													</div>
+													<div class="cont-col2">
+														<div class="desc">
+															<a ng-click="GetArticleBy(x.Id)">{{x.Title}}</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col2">
+												<div class="date">
+													{{x.DateCreated | TimingAgo}}
+												</div>
+											</div>
+										</li>
+										
+										@*<li>
+											<div class="col1">
+												<div class="cont">
+													<div class="cont-col1">
+														<div class="label label-sm label-default">
+															<i class="fa fa-bullhorn"></i>
+														</div>
+													</div>
+													<div class="cont-col2">
+														<div class="desc">
+															New order received. Please take care of it.
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col2">
+												<div class="date">
+													3 hours
+												</div>
+											</div>
+										</li>*@
+										
+									</ul>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END PAGE CONTENT-->
+		</div>
+	</div>
+	<!-- END CONTENT -->
+	<!-- BEGIN QUICK SIDEBAR -->
+	@await Html.PartialAsync("../Shared/_Partial_QuickSideBar.cshtml")
+	<!-- END QUICK SIDEBAR -->
+
+
+	<div class="modal fade draggable-modal" id="Popup_AddTopic" tabindex="-1" role="basic" aria-hidden="true">
+		<div class="modal-dialog modal-full">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					<h4 class="modal-title">@ONE_WEB.Resources.MyResources.GetResourceByKey("AddArticle", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</h4>
+				</div>
+				<div class="modal-body">
+					<form action="" name="FormAddTopic">
+						<div class="form-group">
+							<label>@ONE_WEB.Resources.MyResources.GetResourceByKey("Title", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</label>
+							<input type="text" class="form-control" placeholder="" data-val="true" data-val-required="The User Name field is required." ng-model="Name" name="Name" ng-required="true">
+							<span class="text-danger" data-valmsg-for="Name" data-valmsg-replace="true" ng-show="submitted && FormAddTopic.Name.$error.required">ThisFieldRequired.</span>
+						</div>
+						<div class="form-group">
+							<label>@ONE_WEB.Resources.MyResources.GetResourceByKey("Content", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</label>
+							<div name="summernote" id="Note_AddTopic">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn default" data-dismiss="modal">Close</button>
+					<button type="button" ng-click="submitted=true; AddArticle()" class="btn blue">Save</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+
+	<div class="modal fade draggable-modal" id="Popup_EditTopic" tabindex="-1" role="basic" aria-hidden="true">
+		<div class="modal-dialog modal-full">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					<h4 class="modal-title">@ONE_WEB.Resources.MyResources.GetResourceByKey("EditArticle", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</h4>
+				</div>
+				<div class="modal-body">
+					<form action="" name="FormEditTopic">
+						<div class="form-group">
+							<label>@ONE_WEB.Resources.MyResources.GetResourceByKey("Title", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</label>
+							<input type="text" class="form-control" placeholder="" data-val="true" data-val-required="The User Name field is required." ng-model="Name_Edit" name="Name_Edit" ng-required="true">
+							<span class="text-danger" data-valmsg-for="Name" data-valmsg-replace="true" ng-show="submitted && FormEditTopic.Name_Edit.$error.required">ThisFieldRequired.</span>
+						</div>
+						<div class="form-group">
+							<label>@ONE_WEB.Resources.MyResources.GetResourceByKey("Content", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</label>
+							<div name="summernote" id="Note_EditTopic">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn default" data-dismiss="modal">Close</button>
+					<button type="button" ng-click="submitted=true; UpdateArticle()" class="btn blue">Save</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+</div>
+<!-- END CONTAINER -->
+
+
+<script src="~/assets/global/plugins/bootstrap-summernote/summernote.min.js" asp-append-version="true"></script>
+
+<script src="~/assets/global/scripts/metronic.js" asp-append-version="true"></script>
+<script src="~/assets/admin/layout/scripts/layout.js" asp-append-version="true"></script>
+<script src="~/assets/admin/layout/scripts/quick-sidebar.js" asp-append-version="true"></script>
+<script src="~/assets/admin/layout/scripts/demo.js" asp-append-version="true"></script>
+<script src="~/assets/admin/pages/scripts/components-editors.js" asp-append-version="true"></script>
+
+<script src="~/js/TopicView.js?a=1"></script>
+
+<script>
+	jQuery(document).ready(function () {
+		// initiate layout and plugins
+		Metronic.init(); // init metronic core components
+		Layout.init(); // init current layout
+		QuickSidebar.init(); // init quick sidebar
+		Demo.init(); // init demo features
+		ComponentsEditors.init();
+		$("#draggable").draggable({
+			handle: ".modal-header"
+		});
+	});
+</script>

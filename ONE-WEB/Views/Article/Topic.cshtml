@@ -1,0 +1,279 @@
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
+
+<link href="~/assets/admin/pages/css/news.css" rel="stylesheet" type="text/css" />
+<link href="~/assets/global/plugins/bootstrap-summernote/summernote.css" rel="stylesheet" type="text/css" />
+<link href="~/assets/admin/pages/css/search.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="~/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css" />
+
+<!-- BEGIN CONTAINER -->
+<div class="page-container" ng-cloak>
+	<!-- BEGIN SIDEBAR -->
+	@*<partial name="../Shared/_Partial_SideBar.cshtml" />*@
+	@await Html.PartialAsync("../Shared/_Partial_LeftSideBar.cshtml")
+	<!-- END SIDEBAR -->
+	<!-- BEGIN CONTENT -->
+	<div class="page-content-wrapper">
+		<div class="page-content">
+			<div class="page-bar">
+				<ul class="page-breadcrumb">
+					<li>
+						<i class="fa fa-home"></i>
+						<a href="/">@ONE_WEB.Resources.MyResources.GetResourceByKey("Home", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<a href="#">@ONE_WEB.Resources.MyResources.GetResourceByKey("Pages", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<a href="/Article/Topic">@ONE_WEB.Resources.MyResources.GetResourceByKey("Topic", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</a>
+					</li>
+				</ul>
+				<div class="page-toolbar">
+					<div class="btn-group pull-right">
+						<button type="button" class="btn btn-fit-height grey-salt dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true">
+							@ONE_WEB.Resources.MyResources.GetResourceByKey("Actions", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value) <i class="fa fa-angle-down"></i>
+						</button>
+						<ul class="dropdown-menu pull-right" role="menu">
+							<li>
+								<a data-toggle="modal" href="#Popup_AddTopic">
+									<i class="fa fa-plus"></i>
+									@ONE_WEB.Resources.MyResources.GetResourceByKey("AddTopic", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)
+								</a>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- END PAGE HEADER-->
+			<!-- BEGIN PAGE CONTENT-->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row booking-results" ng-repeat="x in Topics" ng-if="$index % 2 == 0">
+						<div class="col-md-6">
+							<div class="booking-result">
+								<div class="booking-img">
+									<img src="../../assets/admin/pages/media/gallery/image4.jpg" alt="">									
+								</div>
+								<div class="booking-info">
+									<h2>
+										<a href="/Article/TopicView?topicid={{x.Id}}">
+											{{x.Name}}
+										</a>
+									</h2>
+									<div class="stars">
+										<em>{{x.DateCreated | TimingAgo}}</em>
+										<a data-toggle="modal" href="#Popup_EditTopic" ng-click="GetTopicBy(x.Id)">
+											<i class="fa fa-pencil" title="@ONE_WEB.Resources.MyResources.GetResourceByKey("Edit", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)"></i>
+										</a>
+									</div>
+									<p>
+										<span ng-bind-html="x.Description | trust"></span>
+										<a href="/Article/TopicView?topicid={{x.Id}}">
+											@ONE_WEB.Resources.MyResources.GetResourceByKey("ReadMore", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)...
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6" ng-if="$index + 1 < Topics.length">
+							<div class="booking-result">
+								<div class="booking-img">
+									<img src="../../assets/admin/pages/media/gallery/image4.jpg" alt="">
+								</div>
+								<div class="booking-info">
+									<h2>
+										<a href="/Article/TopicView?topicid={{Topics[$index + 1].Id}}">
+											{{Topics[$index + 1].Name}}
+										</a>
+									</h2>
+									<div class="stars">
+										<em>{{Topics[$index + 1].DateCreated | TimingAgo}}</em>
+										<a data-toggle="modal" href="#Popup_EditTopic" ng-click="GetTopicBy(Topics[$index + 1].Id)">
+											<i class="fa fa-pencil" title="@ONE_WEB.Resources.MyResources.GetResourceByKey("Edit", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)"></i>
+										</a>
+									</div>
+									<p>
+										<span ng-bind-html="Topics[$index + 1].Description | trust"></span>
+										<a href="/Article/TopicView?topicid={{Topics[$index + 1].Id}}">
+											@ONE_WEB.Resources.MyResources.GetResourceByKey("ReadMore", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)...
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5 col-sm-12">
+					<div class="dataTables_info" id="sample_1_info" role="status" aria-live="polite">
+						@ONE_WEB.Resources.MyResources.GetResourceByKey("Showing", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value) {{FromRow}} @ONE_WEB.Resources.MyResources.GetResourceByKey("To", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value) {{ToRow}} @ONE_WEB.Resources.MyResources.GetResourceByKey("Of", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value) {{TotalRow}} @ONE_WEB.Resources.MyResources.GetResourceByKey("Entries", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)
+					</div>
+				</div>
+				<div class="col-md-7 col-sm-12">
+					<div class="dataTables_paginate paging_bootstrap_full_number" id="sample_1_paginate">
+						<ul class="pagination" id="pager">
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- END PAGE CONTENT-->
+		</div>
+	</div>
+	<!-- END CONTENT -->
+	<!-- BEGIN QUICK SIDEBAR -->
+	@await Html.PartialAsync("../Shared/_Partial_QuickSideBar.cshtml")
+	<!-- END QUICK SIDEBAR -->
+
+
+	<div class="modal fade draggable-modal" id="Popup_AddTopic" tabindex="-1" role="basic" aria-hidden="true">
+		<div class="modal-dialog modal-full">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					<h4 class="modal-title">@ONE_WEB.Resources.MyResources.GetResourceByKey("AddTopic", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</h4>
+				</div>
+				<div class="modal-body">
+					<form action="" name="FormAddTopic">
+						<div class="form-group">
+							<label>@ONE_WEB.Resources.MyResources.GetResourceByKey("Topic", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</label>
+							<input type="text" class="form-control" placeholder="" data-val="true" data-val-required="The User Name field is required." ng-model="Name" name="Name" ng-required="true">
+							<span class="text-danger" data-valmsg-for="Name" data-valmsg-replace="true" ng-show="submitted && FormAddTopic.Name.$error.required">@ONE_WEB.Resources.MyResources.GetResourceByKey("ThisFieldRequired", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value).</span>
+						</div>
+						<div class="form-group">
+							<label>@ONE_WEB.Resources.MyResources.GetResourceByKey("Content", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</label>
+							<div name="summernote" id="Note_AddTopic">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn default" data-dismiss="modal">@ONE_WEB.Resources.MyResources.GetResourceByKey("Close", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</button>
+					<button type="button" ng-click="submitted=true; AddTopic()" class="btn blue">@ONE_WEB.Resources.MyResources.GetResourceByKey("Save", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+
+	<div class="modal fade draggable-modal" id="Popup_EditTopic" tabindex="-1" role="basic" aria-hidden="true">
+		<div class="modal-dialog modal-full">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					<h4 class="modal-title">@ONE_WEB.Resources.MyResources.GetResourceByKey("EditTopic", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</h4>
+				</div>
+				<div class="modal-body">
+					<form action="" name="FormEditTopic">
+						<div class="form-group">
+							<label>@ONE_WEB.Resources.MyResources.GetResourceByKey("Topic", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</label>
+							<input type="text" class="form-control" placeholder="" data-val="true" data-val-required="The User Name field is required." ng-model="Name_Edit" name="Name_Edit" ng-required="true">
+							<span class="text-danger" data-valmsg-for="Name" data-valmsg-replace="true" ng-show="submitted && FormEditTopic.Name_Edit.$error.required">@ONE_WEB.Resources.MyResources.GetResourceByKey("ThisFieldRequired", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value).</span>
+						</div>
+						<div class="form-group">
+							<label>@ONE_WEB.Resources.MyResources.GetResourceByKey("Content", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</label>
+							<div name="summernote" id="Note_EditTopic">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn default" data-dismiss="modal">@ONE_WEB.Resources.MyResources.GetResourceByKey("Close", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</button>
+					<button type="button" ng-click="submitted=true; UpdateTopic()" class="btn blue">@ONE_WEB.Resources.MyResources.GetResourceByKey("Save", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+</div>
+<!-- END CONTAINER -->
+
+
+<script src="~/assets/global/plugins/bootstrap-summernote/summernote.min.js" asp-append-version="true"></script>
+
+@* <script src="~/assets/global/scripts/metronic.js" asp-append-version="true"></script>
+<script src="~/assets/admin/layout/scripts/layout.js" asp-append-version="true"></script>
+<script src="~/assets/admin/layout/scripts/quick-sidebar.js" asp-append-version="true"></script> 
+<script src="~/assets/admin/layout/scripts/demo.js" asp-append-version="true"></script>*@
+<script src="~/assets/admin/pages/scripts/components-editors.js?a=8" asp-append-version="true"></script>
+
+<script src="~/js/Topic.js?a=28"></script>
+
+<script>
+	$('#mnPages').addClass("active");
+	$('#mnTopic').addClass("active");
+
+	jQuery(document).ready(function () {
+		// initiate layout and plugins
+		// Metronic.init(); // init metronic core components
+		// Layout.init(); // init current layout
+		// QuickSidebar.init(); // init quick sidebar
+		// Demo.init(); // init demo features
+		ComponentsEditors.init();
+		$("#Popup_AddTopic,#Popup_EditTopic").draggable({
+			handle: ".modal-header"
+		});
+	});
+
+	
+	jQuery(document).on('paste', async function (e) {
+
+		var text = e.originalEvent.clipboardData.getData('Text');
+
+		alert(text);
+
+		text = CleanWordFormatting(text);
+		//await writeClipboard(text);
+		alert(text);
+
+		e.preventDefault();
+		document.execCommand('insertText', false, text);
+
+		// var prevTime = new Date().valueOf();
+
+		// while (true) {
+		// 	var curTime = new Date().valueOf();
+
+		// 	if (curTime - prevTime > 3000) {
+		// 		break;
+		// 	}
+		// }
+
+		// console.log('deltaTime: ' + (prevTime));
+		// var curTime = new Date().valueOf();
+		// console.log('deltaTime: ' + (curTime));
+		// console.log('deltaTime: ' + (curTime - prevTime));
+
+		// setTimeout(function () {
+
+		// }, 500);
+
+		//alert('text pasted: ' + e.originalEvent.clipboardData.getData('Text'))
+
+	})
+
+	document.addEventListener('keydown', function (event) {
+		// // Check for Ctrl+C (copy) or Ctrl+V (paste)
+		// event.shiftKey == true;
+		// //window.shiftDown = true;
+		// console.log('shiftKey: ' + event.shiftKey);
+		// document.dispatchEvent(event);
+
+		// setTimeout(function () {
+		// 	console.log('shiftKey: ' + event.shiftKey);
+
+		// 	if (event.ctrlKey && (event.key === 'c'
+		// 		|| event.key === 'C')) {
+		// 	}
+		// 	if (event.ctrlKey && (event.key === 'v'
+		// 		|| event.key === 'V')) {
+
+		// 	}
+		// }, 500);
+	});
+</script>

@@ -1,0 +1,664 @@
+2024-04-13T09:33:03.1425377+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-04-13T09:33:03.1481629+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-04-13T09:33:03.1482720+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-04-13T09:33:03.1482931+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-04-13T09:53:08.9462864+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-04-13T09:53:08.9477492+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-04-13T09:53:08.9478177+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-04-13T09:53:08.9478261+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-04-13T09:55:33.4570276+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-04-13T09:55:33.4594379+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-04-13T09:55:33.4595394+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-04-13T09:55:33.4595715+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-04-13T10:01:39.9993510+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-04-13T10:01:40.0013752+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-04-13T10:01:40.0014551+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-04-13T10:01:40.0014683+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-04-13T11:11:20.2825428+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-04-13T11:11:20.2838659+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-04-13T11:11:20.2839106+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-04-13T11:11:20.2839192+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-04-13T14:48:01.7798797+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-04-13T14:48:01.7836069+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-04-13T14:48:01.7837226+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-04-13T14:48:01.7837499+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-04-13T14:55:40.5623207+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-04-13T14:55:40.5661247+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-04-13T14:55:40.5662830+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-04-13T14:55:40.5663127+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-04-13T15:03:52.4252469+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-04-13T15:03:52.4281763+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-04-13T15:03:52.4283095+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-04-13T15:03:52.4283368+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-04-13T15:04:43.8612487+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-04-13T15:04:43.8702110+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-04-13T15:04:43.8720350+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-04-13T15:04:43.8735910+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-04-13T15:09:12.2815626+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-04-13T15:09:12.2853483+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-04-13T15:09:12.2855223+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-04-13T15:09:12.2855651+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-04-13T15:22:14.1068151+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-04-13T15:22:14.1098748+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-04-13T15:22:14.1100067+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-04-13T15:22:14.1100261+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-04-18T15:24:51.8059726+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-04-18T15:24:51.8095293+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-04-18T15:24:51.8096381+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-04-18T15:24:51.8096543+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-04-20T09:13:56.6118284+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-04-20T09:13:56.6134430+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-04-20T09:13:56.6135301+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-04-20T09:13:56.6135405+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-11T10:52:26.5341570+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-11T10:52:26.5355577+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-11T10:52:26.5356143+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-11T10:52:26.5356223+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-11T11:12:44.1899001+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-11T11:12:44.1953371+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-11T11:12:44.1965402+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-11T11:12:44.1975586+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-11T11:13:29.0957141+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-11T11:13:29.1012799+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-11T11:13:29.1046123+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-11T11:13:29.1078148+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-11T11:14:36.7246669+07:00	FAIL	[Microsoft.AspNetCore.SignalR.HubConnectionHandler]	[ErrorDispatchingHubEvent]	Error when dispatching 'OnDisconnectedAsync' on hub.System.InvalidOperationException: Sequence contains more than one matching element
+   at System.Linq.ThrowHelper.ThrowMoreThanOneMatchException()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at ONE_WEB.Hubs.ConnectionHub.HangUp() in D:\Projects\ONE\ONE-WEB\Hubs\ConnectionHub.cs:line 141
+   at ONE_WEB.Hubs.ConnectionHub.OnDisconnectedAsync(Exception exception) in D:\Projects\ONE\ONE-WEB\Hubs\ConnectionHub.cs:line 35
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnDisconnectedAsync(HubConnectionContext connection, Exception exception)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnDisconnectedAsync(HubConnectionContext connection, Exception exception)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.HubOnDisconnectedAsync(HubConnectionContext connection, Exception exception)
+
+2024-05-11T11:14:36.7387855+07:00	FAIL	[Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionManager]	[FailedDispose]	Failed disposing connection cywKE58_inaIuZuoS-vsJQ.System.InvalidOperationException: Sequence contains more than one matching element
+   at System.Linq.ThrowHelper.ThrowMoreThanOneMatchException()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at ONE_WEB.Hubs.ConnectionHub.HangUp() in D:\Projects\ONE\ONE-WEB\Hubs\ConnectionHub.cs:line 141
+   at ONE_WEB.Hubs.ConnectionHub.OnDisconnectedAsync(Exception exception) in D:\Projects\ONE\ONE-WEB\Hubs\ConnectionHub.cs:line 35
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnDisconnectedAsync(HubConnectionContext connection, Exception exception)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnDisconnectedAsync(HubConnectionContext connection, Exception exception)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.HubOnDisconnectedAsync(HubConnectionContext connection, Exception exception)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.OnConnectedAsync(ConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.OnConnectedAsync(ConnectionContext connection)
+   at Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionContext.ExecuteApplication(ConnectionDelegate connectionDelegate)
+   at Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionContext.WaitOnTasks(Task applicationTask, Task transportTask, Boolean closeGracefully)
+   at Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionContext.DisposeAsync(Boolean closeGracefully)
+   at Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionManager.DisposeAndRemoveAsync(HttpConnectionContext connection, Boolean closeGracefully)
+
+2024-05-11T11:15:46.1296829+07:00	FAIL	[Microsoft.AspNetCore.SignalR.HubConnectionHandler]	[ErrorDispatchingHubEvent]	Error when dispatching 'OnDisconnectedAsync' on hub.System.InvalidOperationException: Sequence contains more than one matching element
+   at System.Linq.ThrowHelper.ThrowMoreThanOneMatchException()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at ONE_WEB.Hubs.ConnectionHub.HangUp() in D:\Projects\ONE\ONE-WEB\Hubs\ConnectionHub.cs:line 141
+   at ONE_WEB.Hubs.ConnectionHub.OnDisconnectedAsync(Exception exception) in D:\Projects\ONE\ONE-WEB\Hubs\ConnectionHub.cs:line 35
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnDisconnectedAsync(HubConnectionContext connection, Exception exception)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnDisconnectedAsync(HubConnectionContext connection, Exception exception)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.HubOnDisconnectedAsync(HubConnectionContext connection, Exception exception)
+
+2024-05-11T11:15:46.1334649+07:00	FAIL	[Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionManager]	[FailedDispose]	Failed disposing connection 0JzMVMoTZSeCJQtnbPiCPw.System.InvalidOperationException: Sequence contains more than one matching element
+   at System.Linq.ThrowHelper.ThrowMoreThanOneMatchException()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at ONE_WEB.Hubs.ConnectionHub.HangUp() in D:\Projects\ONE\ONE-WEB\Hubs\ConnectionHub.cs:line 141
+   at ONE_WEB.Hubs.ConnectionHub.OnDisconnectedAsync(Exception exception) in D:\Projects\ONE\ONE-WEB\Hubs\ConnectionHub.cs:line 35
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnDisconnectedAsync(HubConnectionContext connection, Exception exception)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnDisconnectedAsync(HubConnectionContext connection, Exception exception)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.HubOnDisconnectedAsync(HubConnectionContext connection, Exception exception)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.OnConnectedAsync(ConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.OnConnectedAsync(ConnectionContext connection)
+   at Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionContext.ExecuteApplication(ConnectionDelegate connectionDelegate)
+   at Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionContext.WaitOnTasks(Task applicationTask, Task transportTask, Boolean closeGracefully)
+   at Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionContext.DisposeAsync(Boolean closeGracefully)
+   at Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionManager.DisposeAndRemoveAsync(HttpConnectionContext connection, Boolean closeGracefully)
+
+2024-05-11T13:54:53.1134986+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-11T13:54:53.1161483+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-11T13:54:53.1162335+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-11T13:54:53.1162538+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-11T14:56:46.1457174+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-11T14:56:46.1479398+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-11T14:56:46.1480350+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-11T14:56:46.1480504+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-15T16:00:11.9140567+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-15T16:00:11.9171963+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-15T16:00:11.9173170+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-15T16:00:11.9173386+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-15T16:32:16.8563717+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-15T16:32:16.8599070+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-15T16:32:16.8601714+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-15T16:32:16.8602267+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-15T19:56:00.6191570+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-15T19:56:00.6225437+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-15T19:56:00.6226424+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-15T19:56:00.6226593+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-15T20:19:47.1738740+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-15T20:19:47.1753266+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-15T20:19:47.1753858+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-15T20:19:47.1754122+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-15T20:45:31.6414129+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-15T20:45:31.6429649+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-15T20:45:31.6430298+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-15T20:45:31.6430431+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-15T20:45:43.7510222+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-15T20:45:43.7526383+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-15T20:45:43.7527153+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-15T20:45:43.7527282+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-15T20:49:26.3205581+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-15T20:49:26.3220052+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-15T20:49:26.3220741+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-15T20:49:26.3220833+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-16T08:19:17.6296240+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-16T08:19:17.6331142+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-16T08:19:17.6332391+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-16T08:19:17.6332603+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-16T20:03:50.8804164+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-16T20:03:50.8835183+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-16T20:03:50.8836169+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-16T20:03:50.8836301+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-16T20:13:23.0035008+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-16T20:13:23.0055502+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-16T20:13:23.0056439+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-16T20:13:23.0056591+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-16T20:14:24.7522340+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-16T20:14:24.7568110+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-16T20:14:24.7569260+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-16T20:14:24.7569396+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-18T10:22:32.4580937+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-18T10:22:32.4603038+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-18T10:22:32.4605276+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-18T10:22:32.4605741+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-19T09:19:52.8886509+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-19T09:19:52.8925780+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-19T09:19:52.8927034+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-19T09:19:52.8927501+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-19T14:12:57.5145457+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-19T14:12:57.5157669+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-19T14:12:57.5158458+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-19T14:12:57.5158566+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-19T14:45:45.5460104+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-19T14:45:45.5473243+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-19T14:45:45.5473783+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-19T14:45:45.5473885+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-20T15:29:37.2233006+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-20T15:29:37.2262174+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-20T15:29:37.2264386+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-20T15:29:37.2265167+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-20T15:32:02.0525938+07:00	FAIL	[Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher]	[FailedInvokingHubMethod]	Failed to invoke hub method 'SetShareScreen'.System.NullReferenceException: Object reference not set to an instance of an object.
+   at ONE_WEB.Hubs.ConnectionHub.SetShareScreen(Boolean isShare) in D:\Projects\ONE\ONE-WEB\Hubs\ConnectionHub.cs:line 240
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.ExecuteMethod(ObjectMethodExecutor methodExecutor, Hub hub, Object[] arguments)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.<Invoke>g__ExecuteInvocation|16_0(DefaultHubDispatcher`1 dispatcher, ObjectMethodExecutor methodExecutor, THub hub, Object[] arguments, AsyncServiceScope scope, IHubActivator`1 hubActivator, HubConnectionContext connection, HubMethodInvocationMessage hubMethodInvocationMessage, Boolean isStreamCall)
+
+2024-05-20T15:34:05.6843206+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-20T15:34:05.6872609+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-20T15:34:05.6873481+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-20T15:34:05.6873638+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-20T15:45:35.1324203+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-20T15:45:35.1346835+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-20T15:45:35.1347902+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-20T15:45:35.1348081+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-20T15:49:39.7385299+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-20T15:49:39.7405637+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-20T15:49:39.7406734+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-20T15:49:39.7407044+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-20T15:53:15.2838286+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-20T15:53:15.2878208+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-20T15:53:15.2880182+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-20T15:53:15.2880558+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-20T16:10:54.3580544+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-20T16:10:54.3600765+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-20T16:10:54.3601894+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-20T16:10:54.3602756+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-22T16:07:44.4253594+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-22T16:07:44.4276179+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-22T16:07:44.4277078+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-22T16:07:44.4277265+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-22T16:09:39.1307866+07:00	FAIL	[Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher]	[FailedInvokingHubMethod]	Failed to invoke hub method 'SetShareScreen'.System.NullReferenceException: Object reference not set to an instance of an object.
+   at ONE_WEB.Hubs.ConnectionHub.SetShareScreen(Boolean isShare) in D:\Projects\ONE\ONE-WEB\Hubs\ConnectionHub.cs:line 240
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.ExecuteMethod(ObjectMethodExecutor methodExecutor, Hub hub, Object[] arguments)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.<Invoke>g__ExecuteInvocation|16_0(DefaultHubDispatcher`1 dispatcher, ObjectMethodExecutor methodExecutor, THub hub, Object[] arguments, AsyncServiceScope scope, IHubActivator`1 hubActivator, HubConnectionContext connection, HubMethodInvocationMessage hubMethodInvocationMessage, Boolean isStreamCall)
+
+2024-05-22T16:10:57.1108197+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-22T16:10:57.1185582+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-22T16:10:57.1208973+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-22T16:10:57.1229948+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-22T16:19:49.9467639+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-22T16:19:49.9497785+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-22T16:19:49.9498858+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-22T16:19:49.9499069+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-22T16:22:52.4953925+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-22T16:22:52.4986356+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-22T16:22:52.4988127+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-22T16:22:52.4988509+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-22T17:08:10.2462469+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-22T17:08:10.2481881+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-22T17:08:10.2482744+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-22T17:08:10.2482898+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-22T17:11:13.8430207+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-22T17:11:13.8449497+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-22T17:11:13.8450730+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-22T17:11:13.8450880+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-22T20:16:57.3107544+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-22T20:16:57.3138364+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-22T20:16:57.3139493+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-22T20:16:57.3139727+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-22T20:17:46.1492663+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	CallUser targetConnectionId: ONE_WEB.Models.User
+2024-05-22T20:17:50.3875763+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	AnswerCall targetConnectionId: ONE_WEB.Models.User
+2024-05-22T20:21:23.7786797+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	CallUser targetConnectionId: ONE_WEB.Models.User
+2024-05-22T20:21:29.1755068+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	AnswerCall targetConnectionId: ONE_WEB.Models.User
+2024-05-22T20:30:45.8002618+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-22T20:30:45.8065030+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-22T20:30:45.8081354+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-22T20:30:45.8095529+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-22T20:31:41.4398626+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	CallUser targetConnectionId: ONE_WEB.Models.User
+2024-05-22T20:33:34.9681316+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-22T20:33:34.9720324+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-22T20:33:34.9722405+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-22T20:33:34.9722697+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-22T20:33:45.9974975+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	CallUser targetConnectionId: ONE_WEB.Models.User
+2024-05-22T20:33:49.6357786+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	AnswerCall targetConnectionId: ONE_WEB.Models.User
+2024-05-25T21:03:58.6376905+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-25T21:03:58.6403583+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-25T21:03:58.6404522+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-25T21:03:58.6404668+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-25T21:04:57.6201559+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	CallUser targetConnectionId: ONE_WEB.Models.User
+2024-05-25T21:05:02.5597690+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	AnswerCall targetConnectionId: ONE_WEB.Models.User
+2024-05-25T21:13:09.1260902+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-25T21:13:09.1297290+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-25T21:13:09.1298507+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-25T21:13:09.1298689+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-25T21:13:25.8979996+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	CallUser targetConnectionId: ONE_WEB.Models.User
+2024-05-25T21:13:30.0378331+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	AnswerCall targetConnectionId: ONE_WEB.Models.User
+2024-05-25T21:20:11.3870785+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-25T21:20:11.3899097+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-25T21:20:11.3900306+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-25T21:20:11.3900536+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-25T21:20:27.8293056+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	CallUser targetConnectionId: ONE_WEB.Models.User
+2024-05-25T21:20:31.9787381+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	AnswerCall targetConnectionId: ONE_WEB.Models.User
+2024-05-25T21:24:21.1183513+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-25T21:24:21.1214222+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-25T21:24:21.1215185+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-25T21:24:21.1215341+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-25T21:24:35.3449179+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	CallUser targetConnectionId: ONE_WEB.Models.User
+2024-05-25T21:24:38.4648681+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	AnswerCall targetConnectionId: ONE_WEB.Models.User
+2024-05-25T21:26:27.1403916+07:00	FAIL	[Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher]	[FailedInvokingHubMethod]	Failed to invoke hub method 'SetShareScreen'.System.NullReferenceException: Object reference not set to an instance of an object.
+   at ONE_WEB.Hubs.ConnectionHub.SetShareScreen(Boolean isShare) in D:\Projects\ONE\ONE-WEB\Hubs\ConnectionHub.cs:line 246
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.ExecuteMethod(ObjectMethodExecutor methodExecutor, Hub hub, Object[] arguments)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.<Invoke>g__ExecuteInvocation|16_0(DefaultHubDispatcher`1 dispatcher, ObjectMethodExecutor methodExecutor, THub hub, Object[] arguments, AsyncServiceScope scope, IHubActivator`1 hubActivator, HubConnectionContext connection, HubMethodInvocationMessage hubMethodInvocationMessage, Boolean isStreamCall)
+
+2024-05-28T15:30:47.2895944+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-28T15:30:47.2922660+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-28T15:30:47.2923614+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-28T15:30:47.2923855+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-28T15:35:30.4746319+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-28T15:35:30.4769627+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-28T15:35:30.4770503+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-28T15:35:30.4770680+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-28T16:47:50.2320766+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-28T16:47:50.2389442+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-28T16:47:50.2397413+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-28T16:47:50.2401860+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-28T16:49:37.9053810+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-28T16:49:37.9073578+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-28T16:49:37.9074942+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-28T16:49:37.9075601+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-28T16:56:14.8454846+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-28T16:56:14.8476978+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-28T16:56:14.8477884+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-28T16:56:14.8478092+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-28T16:58:35.9204185+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-28T16:58:35.9230249+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-28T16:58:35.9232382+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-28T16:58:35.9232643+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-28T17:00:41.6393308+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-28T17:00:41.6420259+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-28T17:00:41.6421587+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-28T17:00:41.6421768+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-29T15:55:58.8063139+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-29T15:55:58.8091378+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-29T15:55:58.8092204+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-29T15:55:58.8092346+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-29T16:02:02.7549785+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-29T16:02:02.7567499+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-29T16:02:02.7568081+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-29T16:02:02.7568179+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-29T16:03:55.8849114+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-29T16:03:55.8863829+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-29T16:03:55.8864464+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-29T16:03:55.8864628+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-29T16:05:17.4874974+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-29T16:05:17.4888763+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-29T16:05:17.4889649+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-29T16:05:17.4889877+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-29T16:29:42.6803111+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-29T16:29:42.6820255+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-29T16:29:42.6821112+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-29T16:29:42.6821259+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-29T16:32:37.1762241+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-29T16:32:37.1775444+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-29T16:32:37.1776049+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-29T16:32:37.1776147+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-29T16:39:05.9902473+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-29T16:39:05.9915723+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-29T16:39:05.9916183+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-29T16:39:05.9916298+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-29T16:40:50.7752262+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-29T16:40:50.7765846+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-29T16:40:50.7766475+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-29T16:40:50.7766573+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-29T16:43:25.9490810+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-29T16:43:25.9504011+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-29T16:43:25.9504640+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-29T16:43:25.9504710+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-29T20:29:58.7173662+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-29T20:29:58.7201429+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-29T20:29:58.7202303+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-29T20:29:58.7202464+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-29T20:32:46.2476413+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-29T20:32:46.2511603+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-29T20:32:46.2512890+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-29T20:32:46.2513057+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-29T20:46:06.9187713+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-29T20:46:06.9217161+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-29T20:46:06.9218546+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-29T20:46:06.9218685+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-29T21:29:36.5964987+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-29T21:29:36.5998027+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-29T21:29:36.5999068+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-29T21:29:36.5999222+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-29T21:31:37.0101494+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-29T21:31:37.0128297+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-29T21:31:37.0129896+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-29T21:31:37.0130310+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-30T08:29:25.4551262+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-30T08:29:25.4576879+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-30T08:29:25.4577682+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-30T08:29:25.4577810+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-05-30T08:31:54.5908399+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-05-30T08:31:54.5935240+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-05-30T08:31:54.5936189+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-05-30T08:31:54.5936336+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-06-01T21:44:45.5370069+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-06-01T21:44:45.5407406+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-06-01T21:44:45.5408282+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-06-01T21:44:45.5408447+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-06-29T15:29:20.7218015+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-06-29T15:29:20.7245683+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-06-29T15:29:20.7246461+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-06-29T15:29:20.7246589+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-06-29T15:32:27.9556247+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SetShareScreen callingUser: {"Username":"sunt","ConnectionId":"ozVI5GCec6saHjvAjlEV_Q","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1"}
+2024-06-29T15:32:28.8694966+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1
+2024-06-29T15:32:28.8701199+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:28.8728086+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"ozVI5GCec6saHjvAjlEV_Q","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1"}
+2024-06-29T15:32:28.8729773+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1
+2024-06-29T15:32:28.8730132+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:28.8739205+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"ozVI5GCec6saHjvAjlEV_Q","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1"}
+2024-06-29T15:32:28.8740012+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1
+2024-06-29T15:32:28.8741092+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:28.8742087+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"ozVI5GCec6saHjvAjlEV_Q","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1"}
+2024-06-29T15:32:28.8743085+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1
+2024-06-29T15:32:28.8743956+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:28.8771051+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"ozVI5GCec6saHjvAjlEV_Q","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1"}
+2024-06-29T15:32:28.8772065+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1
+2024-06-29T15:32:28.8773034+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:28.8773613+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"ozVI5GCec6saHjvAjlEV_Q","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1"}
+2024-06-29T15:32:28.8773942+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1
+2024-06-29T15:32:28.8774000+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:28.8774290+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"ozVI5GCec6saHjvAjlEV_Q","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1"}
+2024-06-29T15:32:28.9374996+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1
+2024-06-29T15:32:28.9377238+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:28.9380859+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"ozVI5GCec6saHjvAjlEV_Q","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1"}
+2024-06-29T15:32:28.9383620+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1
+2024-06-29T15:32:28.9384085+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:28.9390616+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"ozVI5GCec6saHjvAjlEV_Q","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1"}
+2024-06-29T15:32:28.9597433+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1
+2024-06-29T15:32:28.9609057+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:28.9611917+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"ozVI5GCec6saHjvAjlEV_Q","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1"}
+2024-06-29T15:32:28.9624877+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1
+2024-06-29T15:32:28.9626083+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:28.9629245+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"ozVI5GCec6saHjvAjlEV_Q","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1"}
+2024-06-29T15:32:28.9641523+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1
+2024-06-29T15:32:28.9643116+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:28.9644562+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"ozVI5GCec6saHjvAjlEV_Q","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1"}
+2024-06-29T15:32:28.9647718+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1
+2024-06-29T15:32:28.9648268+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:28.9650121+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"ozVI5GCec6saHjvAjlEV_Q","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1"}
+2024-06-29T15:32:28.9655319+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1
+2024-06-29T15:32:28.9655692+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:28.9660337+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"ozVI5GCec6saHjvAjlEV_Q","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1"}
+2024-06-29T15:32:28.9661262+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1
+2024-06-29T15:32:28.9661664+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:28.9663242+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"ozVI5GCec6saHjvAjlEV_Q","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1"}
+2024-06-29T15:32:29.0343693+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1
+2024-06-29T15:32:29.0344623+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:29.0345705+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"ozVI5GCec6saHjvAjlEV_Q","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1"}
+2024-06-29T15:32:29.8815162+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1
+2024-06-29T15:32:29.8816318+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:29.8818359+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"ozVI5GCec6saHjvAjlEV_Q","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"35f8c6d7-eda3-4ae5-9345-4e9b80cc77a1"}
+2024-06-29T15:32:29.9353439+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: ozVI5GCec6saHjvAjlEV_Q
+2024-06-29T15:32:29.9354252+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:29.9355011+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:29.9355594+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: ozVI5GCec6saHjvAjlEV_Q
+2024-06-29T15:32:29.9355719+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:29.9355881+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:29.9356148+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: ozVI5GCec6saHjvAjlEV_Q
+2024-06-29T15:32:29.9356195+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:29.9356329+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:29.9356451+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: ozVI5GCec6saHjvAjlEV_Q
+2024-06-29T15:32:29.9356539+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:29.9356621+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:29.9721263+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: ozVI5GCec6saHjvAjlEV_Q
+2024-06-29T15:32:29.9722441+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:29.9726509+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:30.1308349+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: ozVI5GCec6saHjvAjlEV_Q
+2024-06-29T15:32:30.1308864+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:30.1309594+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:30.1310170+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: ozVI5GCec6saHjvAjlEV_Q
+2024-06-29T15:32:30.1310243+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:30.1310547+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:30.9379546+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: ozVI5GCec6saHjvAjlEV_Q
+2024-06-29T15:32:30.9381163+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:32:30.9383212+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"ei13gYfSYKOPHe2oizEQeg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:06.6820823+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SetShareScreen callingUser: {"Username":"sunt","ConnectionId":"5Hj9i2p1-EUzV_FpjOKoOQ","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"551e9677-e589-4eac-99f7-b95652ed8bae"}
+2024-06-29T15:36:06.7430116+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 551e9677-e589-4eac-99f7-b95652ed8bae
+2024-06-29T15:36:06.7434019+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:06.7435738+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"5Hj9i2p1-EUzV_FpjOKoOQ","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"551e9677-e589-4eac-99f7-b95652ed8bae"}
+2024-06-29T15:36:06.7437094+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 551e9677-e589-4eac-99f7-b95652ed8bae
+2024-06-29T15:36:06.7437247+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:06.7437572+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"5Hj9i2p1-EUzV_FpjOKoOQ","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"551e9677-e589-4eac-99f7-b95652ed8bae"}
+2024-06-29T15:36:06.7438316+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 551e9677-e589-4eac-99f7-b95652ed8bae
+2024-06-29T15:36:06.7438453+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:06.7438577+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"5Hj9i2p1-EUzV_FpjOKoOQ","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"551e9677-e589-4eac-99f7-b95652ed8bae"}
+2024-06-29T15:36:06.7438815+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 551e9677-e589-4eac-99f7-b95652ed8bae
+2024-06-29T15:36:06.7438863+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:06.7439118+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"5Hj9i2p1-EUzV_FpjOKoOQ","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"551e9677-e589-4eac-99f7-b95652ed8bae"}
+2024-06-29T15:36:06.7439442+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 551e9677-e589-4eac-99f7-b95652ed8bae
+2024-06-29T15:36:06.7439904+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:06.7440017+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"5Hj9i2p1-EUzV_FpjOKoOQ","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"551e9677-e589-4eac-99f7-b95652ed8bae"}
+2024-06-29T15:36:06.7440211+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 551e9677-e589-4eac-99f7-b95652ed8bae
+2024-06-29T15:36:06.7440264+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:06.7440396+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"5Hj9i2p1-EUzV_FpjOKoOQ","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"551e9677-e589-4eac-99f7-b95652ed8bae"}
+2024-06-29T15:36:06.7990855+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 551e9677-e589-4eac-99f7-b95652ed8bae
+2024-06-29T15:36:06.7992495+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:06.7993311+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"5Hj9i2p1-EUzV_FpjOKoOQ","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"551e9677-e589-4eac-99f7-b95652ed8bae"}
+2024-06-29T15:36:06.8111187+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 551e9677-e589-4eac-99f7-b95652ed8bae
+2024-06-29T15:36:06.8112511+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:06.8113183+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"5Hj9i2p1-EUzV_FpjOKoOQ","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"551e9677-e589-4eac-99f7-b95652ed8bae"}
+2024-06-29T15:36:06.8661582+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 551e9677-e589-4eac-99f7-b95652ed8bae
+2024-06-29T15:36:06.8666814+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:06.8674697+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"5Hj9i2p1-EUzV_FpjOKoOQ","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"551e9677-e589-4eac-99f7-b95652ed8bae"}
+2024-06-29T15:36:06.8708412+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 551e9677-e589-4eac-99f7-b95652ed8bae
+2024-06-29T15:36:06.8708963+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:06.8710650+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"5Hj9i2p1-EUzV_FpjOKoOQ","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"551e9677-e589-4eac-99f7-b95652ed8bae"}
+2024-06-29T15:36:06.8712759+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 551e9677-e589-4eac-99f7-b95652ed8bae
+2024-06-29T15:36:06.8713414+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:06.8713753+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"5Hj9i2p1-EUzV_FpjOKoOQ","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"551e9677-e589-4eac-99f7-b95652ed8bae"}
+2024-06-29T15:36:06.8714207+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 551e9677-e589-4eac-99f7-b95652ed8bae
+2024-06-29T15:36:06.8714300+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:06.8714526+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"5Hj9i2p1-EUzV_FpjOKoOQ","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"551e9677-e589-4eac-99f7-b95652ed8bae"}
+2024-06-29T15:36:06.8735586+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 551e9677-e589-4eac-99f7-b95652ed8bae
+2024-06-29T15:36:06.8737888+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:06.8739003+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"5Hj9i2p1-EUzV_FpjOKoOQ","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"551e9677-e589-4eac-99f7-b95652ed8bae"}
+2024-06-29T15:36:06.8739625+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 551e9677-e589-4eac-99f7-b95652ed8bae
+2024-06-29T15:36:06.8739745+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:06.8739990+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"5Hj9i2p1-EUzV_FpjOKoOQ","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"551e9677-e589-4eac-99f7-b95652ed8bae"}
+2024-06-29T15:36:06.8740158+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 551e9677-e589-4eac-99f7-b95652ed8bae
+2024-06-29T15:36:06.8740270+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:06.8740360+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"5Hj9i2p1-EUzV_FpjOKoOQ","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"551e9677-e589-4eac-99f7-b95652ed8bae"}
+2024-06-29T15:36:07.7238735+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 551e9677-e589-4eac-99f7-b95652ed8bae
+2024-06-29T15:36:07.7239675+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:07.7247744+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"5Hj9i2p1-EUzV_FpjOKoOQ","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"551e9677-e589-4eac-99f7-b95652ed8bae"}
+2024-06-29T15:36:07.7660592+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 5Hj9i2p1-EUzV_FpjOKoOQ
+2024-06-29T15:36:07.7661094+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:07.7666297+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:07.7869436+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 5Hj9i2p1-EUzV_FpjOKoOQ
+2024-06-29T15:36:07.7870224+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:07.7871188+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:07.7877190+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 5Hj9i2p1-EUzV_FpjOKoOQ
+2024-06-29T15:36:07.7877546+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:07.7877987+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:07.7878193+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 5Hj9i2p1-EUzV_FpjOKoOQ
+2024-06-29T15:36:07.7878301+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:07.7878444+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:07.8211489+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 5Hj9i2p1-EUzV_FpjOKoOQ
+2024-06-29T15:36:07.8212183+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:07.8212970+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:07.8787933+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 5Hj9i2p1-EUzV_FpjOKoOQ
+2024-06-29T15:36:07.8789060+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:07.8790163+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:07.8793192+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 5Hj9i2p1-EUzV_FpjOKoOQ
+2024-06-29T15:36:07.8793450+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:07.8794121+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:08.7650499+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: 5Hj9i2p1-EUzV_FpjOKoOQ
+2024-06-29T15:36:08.7650979+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:36:08.7651717+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"jREpqZuOkNYFaF3W_6PXmQ","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:37:59.4269827+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SetShareScreen callingUser: {"Username":"sunt","ConnectionId":"w56x1QIA3TfkCRC3nXKpgw","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"e0121d9d-ddc5-4dc7-9473-34ada656fb1d"}
+2024-06-29T15:37:59.4967957+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: e0121d9d-ddc5-4dc7-9473-34ada656fb1d
+2024-06-29T15:37:59.4968918+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:37:59.4969412+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"w56x1QIA3TfkCRC3nXKpgw","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"e0121d9d-ddc5-4dc7-9473-34ada656fb1d"}
+2024-06-29T15:37:59.4969698+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: e0121d9d-ddc5-4dc7-9473-34ada656fb1d
+2024-06-29T15:37:59.4969776+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:37:59.4969880+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"w56x1QIA3TfkCRC3nXKpgw","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"e0121d9d-ddc5-4dc7-9473-34ada656fb1d"}
+2024-06-29T15:37:59.4969967+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: e0121d9d-ddc5-4dc7-9473-34ada656fb1d
+2024-06-29T15:37:59.4970019+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:37:59.4970067+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"w56x1QIA3TfkCRC3nXKpgw","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"e0121d9d-ddc5-4dc7-9473-34ada656fb1d"}
+2024-06-29T15:37:59.4970215+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: e0121d9d-ddc5-4dc7-9473-34ada656fb1d
+2024-06-29T15:37:59.4970242+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:37:59.4970324+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"w56x1QIA3TfkCRC3nXKpgw","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"e0121d9d-ddc5-4dc7-9473-34ada656fb1d"}
+2024-06-29T15:37:59.4970392+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: e0121d9d-ddc5-4dc7-9473-34ada656fb1d
+2024-06-29T15:37:59.4970457+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:37:59.4970499+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"w56x1QIA3TfkCRC3nXKpgw","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"e0121d9d-ddc5-4dc7-9473-34ada656fb1d"}
+2024-06-29T15:37:59.4970609+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: e0121d9d-ddc5-4dc7-9473-34ada656fb1d
+2024-06-29T15:37:59.4970635+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:37:59.4970753+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"w56x1QIA3TfkCRC3nXKpgw","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"e0121d9d-ddc5-4dc7-9473-34ada656fb1d"}
+2024-06-29T15:37:59.5343386+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: e0121d9d-ddc5-4dc7-9473-34ada656fb1d
+2024-06-29T15:37:59.5354892+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:37:59.5458491+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"w56x1QIA3TfkCRC3nXKpgw","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"e0121d9d-ddc5-4dc7-9473-34ada656fb1d"}
+2024-06-29T15:37:59.5459876+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: e0121d9d-ddc5-4dc7-9473-34ada656fb1d
+2024-06-29T15:37:59.5460146+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:37:59.5460428+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"w56x1QIA3TfkCRC3nXKpgw","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"e0121d9d-ddc5-4dc7-9473-34ada656fb1d"}
+2024-06-29T15:37:59.5872323+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: e0121d9d-ddc5-4dc7-9473-34ada656fb1d
+2024-06-29T15:37:59.5873641+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:37:59.5876215+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"w56x1QIA3TfkCRC3nXKpgw","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"e0121d9d-ddc5-4dc7-9473-34ada656fb1d"}
+2024-06-29T15:37:59.5881711+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: e0121d9d-ddc5-4dc7-9473-34ada656fb1d
+2024-06-29T15:37:59.5884591+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:37:59.5966320+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"w56x1QIA3TfkCRC3nXKpgw","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"e0121d9d-ddc5-4dc7-9473-34ada656fb1d"}
+2024-06-29T15:37:59.5967370+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: e0121d9d-ddc5-4dc7-9473-34ada656fb1d
+2024-06-29T15:37:59.5967537+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:37:59.5967842+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"w56x1QIA3TfkCRC3nXKpgw","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"e0121d9d-ddc5-4dc7-9473-34ada656fb1d"}
+2024-06-29T15:37:59.5967995+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: e0121d9d-ddc5-4dc7-9473-34ada656fb1d
+2024-06-29T15:37:59.5968093+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:37:59.5968173+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"w56x1QIA3TfkCRC3nXKpgw","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"e0121d9d-ddc5-4dc7-9473-34ada656fb1d"}
+2024-06-29T15:37:59.5968808+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: e0121d9d-ddc5-4dc7-9473-34ada656fb1d
+2024-06-29T15:37:59.5968937+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:37:59.5969145+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"w56x1QIA3TfkCRC3nXKpgw","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"e0121d9d-ddc5-4dc7-9473-34ada656fb1d"}
+2024-06-29T15:37:59.5969883+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: e0121d9d-ddc5-4dc7-9473-34ada656fb1d
+2024-06-29T15:37:59.5973750+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:37:59.5974223+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"w56x1QIA3TfkCRC3nXKpgw","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"e0121d9d-ddc5-4dc7-9473-34ada656fb1d"}
+2024-06-29T15:37:59.5974570+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: e0121d9d-ddc5-4dc7-9473-34ada656fb1d
+2024-06-29T15:37:59.5974718+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:37:59.5974833+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"w56x1QIA3TfkCRC3nXKpgw","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"e0121d9d-ddc5-4dc7-9473-34ada656fb1d"}
+2024-06-29T15:38:00.4686190+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: e0121d9d-ddc5-4dc7-9473-34ada656fb1d
+2024-06-29T15:38:00.4687072+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:38:00.4688464+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"w56x1QIA3TfkCRC3nXKpgw","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"e0121d9d-ddc5-4dc7-9473-34ada656fb1d"}
+2024-06-29T15:38:00.4982868+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: w56x1QIA3TfkCRC3nXKpgw
+2024-06-29T15:38:00.4985611+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:38:00.4986428+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:38:00.4996181+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: w56x1QIA3TfkCRC3nXKpgw
+2024-06-29T15:38:00.4996458+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:38:00.4996820+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:38:00.5014663+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: w56x1QIA3TfkCRC3nXKpgw
+2024-06-29T15:38:00.5014953+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:38:00.5015383+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:38:00.5026512+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: w56x1QIA3TfkCRC3nXKpgw
+2024-06-29T15:38:00.5027059+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:38:00.5027322+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:38:00.5706509+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: w56x1QIA3TfkCRC3nXKpgw
+2024-06-29T15:38:00.5707130+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:38:00.5707575+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:38:00.5719362+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: w56x1QIA3TfkCRC3nXKpgw
+2024-06-29T15:38:00.5719781+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:38:00.5720247+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:38:00.5724823+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: w56x1QIA3TfkCRC3nXKpgw
+2024-06-29T15:38:00.5725109+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:38:00.5725311+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:38:01.5095676+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: w56x1QIA3TfkCRC3nXKpgw
+2024-06-29T15:38:01.5096132+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:38:01.5096764+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"admin","ConnectionId":"UOZWt3StFJjktPkI-1SoYg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:40:34.3327275+07:00	INFO	[Microsoft.Hosting.Lifetime]	[ListeningOnAddress]	Now listening on: http://localhost:5201
+2024-06-29T15:40:34.3376797+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2024-06-29T15:40:34.3378595+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2024-06-29T15:40:34.3378966+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-WEB\
+2024-06-29T15:40:45.8351214+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SetShareScreen callingUser: {"Username":"sunt","ConnectionId":"T1LsfNuY4YZfbg-x6BKBOA","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"a5a3164f-3da3-4858-acb8-611a0f27040b"}
+2024-06-29T15:40:45.8826889+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: a5a3164f-3da3-4858-acb8-611a0f27040b
+2024-06-29T15:40:45.8835497+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"aStY2x3A7nsVQveZS2evtg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:40:45.8866520+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"T1LsfNuY4YZfbg-x6BKBOA","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"a5a3164f-3da3-4858-acb8-611a0f27040b"}
+2024-06-29T15:40:45.8868556+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: a5a3164f-3da3-4858-acb8-611a0f27040b
+2024-06-29T15:40:45.8868909+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"aStY2x3A7nsVQveZS2evtg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:40:45.8869975+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"T1LsfNuY4YZfbg-x6BKBOA","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"a5a3164f-3da3-4858-acb8-611a0f27040b"}
+2024-06-29T15:40:45.8870956+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: a5a3164f-3da3-4858-acb8-611a0f27040b
+2024-06-29T15:40:45.8871266+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"aStY2x3A7nsVQveZS2evtg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:40:45.8871758+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"T1LsfNuY4YZfbg-x6BKBOA","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"a5a3164f-3da3-4858-acb8-611a0f27040b"}
+2024-06-29T15:40:45.8872139+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: a5a3164f-3da3-4858-acb8-611a0f27040b
+2024-06-29T15:40:45.8872306+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"aStY2x3A7nsVQveZS2evtg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:40:45.8872570+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"T1LsfNuY4YZfbg-x6BKBOA","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"a5a3164f-3da3-4858-acb8-611a0f27040b"}
+2024-06-29T15:40:45.8872919+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: a5a3164f-3da3-4858-acb8-611a0f27040b
+2024-06-29T15:40:45.8873095+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"aStY2x3A7nsVQveZS2evtg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:40:45.8873709+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"T1LsfNuY4YZfbg-x6BKBOA","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"a5a3164f-3da3-4858-acb8-611a0f27040b"}
+2024-06-29T15:40:45.8874045+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: a5a3164f-3da3-4858-acb8-611a0f27040b
+2024-06-29T15:40:45.8874185+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"aStY2x3A7nsVQveZS2evtg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:40:45.8874522+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"T1LsfNuY4YZfbg-x6BKBOA","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"a5a3164f-3da3-4858-acb8-611a0f27040b"}
+2024-06-29T15:40:45.9129623+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: a5a3164f-3da3-4858-acb8-611a0f27040b
+2024-06-29T15:40:45.9130579+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"aStY2x3A7nsVQveZS2evtg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:40:45.9131844+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"T1LsfNuY4YZfbg-x6BKBOA","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"a5a3164f-3da3-4858-acb8-611a0f27040b"}
+2024-06-29T15:40:45.9174788+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: a5a3164f-3da3-4858-acb8-611a0f27040b
+2024-06-29T15:40:45.9175565+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"aStY2x3A7nsVQveZS2evtg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:40:45.9176780+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"T1LsfNuY4YZfbg-x6BKBOA","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"a5a3164f-3da3-4858-acb8-611a0f27040b"}
+2024-06-29T15:40:45.9989046+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: a5a3164f-3da3-4858-acb8-611a0f27040b
+2024-06-29T15:40:45.9992415+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"aStY2x3A7nsVQveZS2evtg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:40:45.9995439+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"T1LsfNuY4YZfbg-x6BKBOA","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"a5a3164f-3da3-4858-acb8-611a0f27040b"}
+2024-06-29T15:40:45.9997321+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: a5a3164f-3da3-4858-acb8-611a0f27040b
+2024-06-29T15:40:46.0000269+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"aStY2x3A7nsVQveZS2evtg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:40:46.0001412+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"T1LsfNuY4YZfbg-x6BKBOA","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"a5a3164f-3da3-4858-acb8-611a0f27040b"}
+2024-06-29T15:40:46.0003811+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: a5a3164f-3da3-4858-acb8-611a0f27040b
+2024-06-29T15:40:46.0004331+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"aStY2x3A7nsVQveZS2evtg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:40:46.0005499+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"T1LsfNuY4YZfbg-x6BKBOA","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"a5a3164f-3da3-4858-acb8-611a0f27040b"}
+2024-06-29T15:40:46.0009220+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: a5a3164f-3da3-4858-acb8-611a0f27040b
+2024-06-29T15:40:46.0009699+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"aStY2x3A7nsVQveZS2evtg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:40:46.0012262+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"T1LsfNuY4YZfbg-x6BKBOA","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"a5a3164f-3da3-4858-acb8-611a0f27040b"}
+2024-06-29T15:40:46.0015536+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: a5a3164f-3da3-4858-acb8-611a0f27040b
+2024-06-29T15:40:46.0017347+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"aStY2x3A7nsVQveZS2evtg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:40:46.0022238+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"T1LsfNuY4YZfbg-x6BKBOA","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"a5a3164f-3da3-4858-acb8-611a0f27040b"}
+2024-06-29T15:40:46.0034874+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: a5a3164f-3da3-4858-acb8-611a0f27040b
+2024-06-29T15:40:46.0036123+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"aStY2x3A7nsVQveZS2evtg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:40:46.0036890+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"T1LsfNuY4YZfbg-x6BKBOA","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"a5a3164f-3da3-4858-acb8-611a0f27040b"}
+2024-06-29T15:40:46.0056248+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: a5a3164f-3da3-4858-acb8-611a0f27040b
+2024-06-29T15:40:46.0056835+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"aStY2x3A7nsVQveZS2evtg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:40:46.0057945+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"T1LsfNuY4YZfbg-x6BKBOA","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"a5a3164f-3da3-4858-acb8-611a0f27040b"}
+2024-06-29T15:40:46.8780982+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetConnectionId: a5a3164f-3da3-4858-acb8-611a0f27040b
+2024-06-29T15:40:46.8782468+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen targetUser: {"Username":"admin","ConnectionId":"aStY2x3A7nsVQveZS2evtg","InCall":false,"IsVideo":false,"IsShareScreen":false,"ShareConnectionId":null}
+2024-06-29T15:40:46.8784766+07:00	INFO	[ONE_WEB.Hubs.ConnectionHub]	[0]	SendSignalShareScreen callingUser: {"Username":"sunt","ConnectionId":"T1LsfNuY4YZfbg-x6BKBOA","InCall":false,"IsVideo":false,"IsShareScreen":true,"ShareConnectionId":"a5a3164f-3da3-4858-acb8-611a0f27040b"}

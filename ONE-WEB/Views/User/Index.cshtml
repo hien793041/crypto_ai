@@ -1,0 +1,246 @@
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
+
+<link rel="stylesheet" type="text/css" href="~/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css" />
+
+<style>
+	thead tr.filter th {
+		background: none;
+	}
+
+	.table-striped > tbody > tr.odd {
+		background-color: #f9f9f9 !important;
+	}
+
+	.table-striped > tbody > tr.even {
+		background-color: none !important;
+	}
+
+	.table-striped > tbody > tr:nth-of-type(2n+1) {
+		background: none;
+	}
+
+	.table-hover > tbody > tr:hover {
+		background-color: #f5f5f5 !important;
+	}
+
+	.avatar {
+		width:45px;
+		height:45px;
+	}
+</style>
+
+<div class="page-container" ng-cloak>
+	<!-- BEGIN SIDEBAR -->
+	@await Html.PartialAsync("../Shared/_Partial_LeftSideBar.cshtml")
+	<!-- END SIDEBAR -->
+	<!-- BEGIN CONTENT -->
+	<div class="page-content-wrapper">
+		<div class="page-content">
+			<!-- BEGIN PAGE HEADER-->
+			<div class="page-bar">
+				<ul class="page-breadcrumb">
+					<li>
+						<i class="fa fa-home"></i>
+						<a href="/">@ONE_WEB.Resources.MyResources.GetResourceByKey("Home", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<a href="#">@ONE_WEB.Resources.MyResources.GetResourceByKey("Pages", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<a href="#">@ONE_WEB.Resources.MyResources.GetResourceByKey("User", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</a>
+					</li>
+				</ul>
+				
+			</div>
+			<!-- END PAGE HEADER-->
+			<!-- BEGIN PAGE CONTENT-->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-responsive">
+						<table class="table table-striped table-bordered table-advance table-hover dataTable ">
+							<thead>
+								<tr>
+									<th>
+										#
+									</th>
+									<th>
+										@ONE_WEB.Resources.MyResources.GetResourceByKey("Avatar", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)
+									</th>
+									<th>
+										@ONE_WEB.Resources.MyResources.GetResourceByKey("FullName", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)
+									</th>
+									<th>
+										@ONE_WEB.Resources.MyResources.GetResourceByKey("UserName", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)
+									</th>
+									<th>
+										@ONE_WEB.Resources.MyResources.GetResourceByKey("Joined", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)
+									</th>
+									<th>
+										Email
+									</th>
+									<th>
+										@ONE_WEB.Resources.MyResources.GetResourceByKey("Status", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)
+									</th>
+									<th>
+									</th>
+								</tr>
+								<tr class="filter">
+									<th>
+									</th>
+									<th>
+									</th>
+									<th>
+										<input type="text" class="form-control form-filter input-sm" ng-model="Search_FullName" ng-keydown="$event.keyCode === 13 && Search();">
+									</th>
+									<th>
+										<input type="text" class="form-control form-filter input-sm" ng-model="Search_UserName" ng-keydown="$event.keyCode === 13 && Search();">
+									</th>
+									<th>
+										
+									</th>
+									<th>
+										<input type="text" class="form-control form-filter input-sm" ng-model="Search_Email" ng-keydown="$event.keyCode === 13 && Search();">
+									</th>
+									<th>
+										<select class="form-control form-filter input-sm" ng-model="Search_Status" ng-change="Search()"
+												ng-options="item.Id as item.Name for item in ListStatus">
+											<option value="" ng-selected="true">@ONE_WEB.Resources.MyResources.GetResourceByKey("All", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</option>
+										</select>
+									</th>
+									<th>
+										<span class="input-group-btn">
+											<button class="btn btn-sm green-haze filter-submit margin-bottom" ng-click="Search()">
+												<i class="fa fa-search"></i>
+												@ONE_WEB.Resources.MyResources.GetResourceByKey("Search", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)
+											</button>
+										</span>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat-start="x in Users" ng-class="$index % 2 == 0 ? 'odd' : 'even' ">
+									<td>
+										{{x.Row}}
+									</td>
+									<td>
+										<img class="avatar" ng-src="{{x.Avatar}}" ng-if="x.Avatar != null" alt="">
+									</td>
+									<td>
+										{{x.FullName}}
+									</td>
+									<td>
+										{{x.UserName}}
+									</td>
+									<td>
+										{{x.DateCreated | date:'dd-MM-yyyy HH:mm'}}
+									</td>
+									<td>
+										{{x.Email}}
+									</td>
+									<td>
+										<select ng-init="x.Status" ng-model="selectedItem[x.Id]" ng-change="ChangeStatus(x.Id, selectedItem[x.Id])" class="form-control form-filter input-sm">
+											<option value="" selected hidden />
+											<option ng-repeat="item in ListStatus"
+													ng-selected="x.Status == item.Id" value="{{item.Id}}">
+												{{item.Name}}
+											</option>
+										</select>
+									</td>
+									<td>
+										<a id="btdetail-{{x.Id}}" ng-if="x.Status == 1" class="btn default btn-xs blue-stripe" href="javascript:;" ng-click="ViewProfile(x.Id)">
+											@ONE_WEB.Resources.MyResources.GetResourceByKey("View", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)
+										</a>
+										<a id="btdetail-{{x.Id}}" ng-if="x.Status == 0" class="btn default btn-xs red-stripe" href="javascript:;" ng-click="ViewProfile(x.Id)">
+											@ONE_WEB.Resources.MyResources.GetResourceByKey("View", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)
+										</a>
+									</td>
+								</tr>
+								<tr class="details" id="detail-{{x.Id}}" ng-repeat-end role="row" style="display:none">
+									<td colspan="8">
+										<table>
+											<tr>
+												<td>
+													<strong>@ONE_WEB.Resources.MyResources.GetResourceByKey("MobileNumber", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</strong>
+												</td>
+												<td>
+													{{x.MobileNumber}}
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>@ONE_WEB.Resources.MyResources.GetResourceByKey("Interests", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</strong>
+												</td>
+												<td>
+													{{x.Interests}}
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>@ONE_WEB.Resources.MyResources.GetResourceByKey("Occupation", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</strong>
+												</td>
+												<td>
+													{{x.Occupation}}
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>@ONE_WEB.Resources.MyResources.GetResourceByKey("About", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)</strong>
+												</td>
+												<td ng-bind-html='(x.About).replace("\n","<br />") | trust'>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="row">
+						<div class="col-md-5 col-sm-12">
+							<div class="dataTables_info" id="sample_1_info" role="status" aria-live="polite">
+								@ONE_WEB.Resources.MyResources.GetResourceByKey("Showing", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value) {{FromRow}} @ONE_WEB.Resources.MyResources.GetResourceByKey("To", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value) {{ToRow}} @ONE_WEB.Resources.MyResources.GetResourceByKey("Of", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value) {{TotalRow}} @ONE_WEB.Resources.MyResources.GetResourceByKey("Entries", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)
+								<span>
+									<span class="seperator" style="padding-right:2px">|</span>
+									@ONE_WEB.Resources.MyResources.GetResourceByKey("View", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)
+									<select ng-init="10" ng-model="PageSize" ng-change="Search()" name="datatable_history_length" aria-controls="datatable_history" class="form-control input-xsmall input-sm input-inline"
+											ng-options="item.Id as item.Text for item in ListPageSize">
+									</select>
+									@ONE_WEB.Resources.MyResources.GetResourceByKey("Records", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)
+								</span>
+							</div>
+						</div>
+						<div class="col-md-7 col-sm-12">
+							<div class="dataTables_paginate paging_bootstrap_full_number" id="sample_1_paginate">
+								<ul class="pagination" id="pager">
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END PAGE CONTENT-->
+			</div>
+			
+		</div>
+	</div>
+	<!-- END CONTENT -->
+	<!-- BEGIN QUICK SIDEBAR -->
+	@await Html.PartialAsync("../Shared/_Partial_QuickSideBar.cshtml")
+	<!-- END QUICK SIDEBAR -->
+
+</div>
+
+<script>
+	$('#mnPages').addClass("active");
+	$('#mnUser').addClass("active");
+
+	jQuery(document).ready(function () {
+		
+	});
+
+	var msgView = '@ONE_WEB.Resources.MyResources.GetResourceByKey("View", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)';
+	var msgHide = '@ONE_WEB.Resources.MyResources.GetResourceByKey("Hide", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)';
+</script>
+
+<script src="~/js/User.js?a=16"></script>

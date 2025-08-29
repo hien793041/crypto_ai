@@ -1,0 +1,1291 @@
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
+
+<link rel="stylesheet" type="text/css" href="~/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css" />
+<link href="~/assets/global/plugins/bootstrap-summernote/summernote.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="~/assets/global/plugins/select2/select2.css" />
+<link rel="stylesheet" type="text/css" href="~/css/chart.css" />
+<link rel="stylesheet" type="text/css" href="~/css/Highcharts/popup.css" />
+<link rel="stylesheet" type="text/css" href="~/css/stock-chart.css?a=8" />
+<link rel="stylesheet" type="text/css" href="~/css/stock2.css?a=3" />
+@* <link rel="stylesheet" type="text/css" href="~/css/Highcharts/highcharts.css?a=3" /> *@
+
+<link href="~/assets/global/plugins/ion.rangeslider/css/ion.rangeSlider.css" rel="stylesheet" type="text/css"/>
+<link href="~/assets/global/plugins/ion.rangeslider/css/ion.rangeSlider.Metronic.css" rel="stylesheet" type="text/css"/>
+
+@* <link href="~/lib/jquery/css/fixedheadertable/defaultTheme.css" rel="stylesheet" type="text/css" />
+<link href="~/lib/jquery/css/fixedheadertable/myTheme.css" rel="stylesheet" type="text/css" /> *@
+
+<script src="~/assets/global/plugins/chosen/chosen.jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="~/assets/global/plugins/chosen/chosen.min.css" />
+
+<script>
+    $(function () {
+      $("#tabs").tabs();
+      $("#tools").selectmenu();
+      // $("#op").selectmenu();
+      $("#third-tabs").tabs();
+      $("#danhmuc-dropdown").selectmenu();
+      $(".chosen-select").chosen({
+        no_results_text: "Oops, nothing found!",
+      });
+      $(".js-example-basic-multiple").select2();
+    });
+</script>
+
+<style>
+	.portlet.box.blue > .portlet-title {
+		background-color: #fff !important;
+		border-bottom: 1px solid #ddd;
+	}
+
+	.portlet > .portlet-title > .nav-tabs > li > a {
+		color: #333;
+	}
+
+	.portlet.box.blue > .portlet-title > .caption {
+		color: #333;
+	}
+
+	.portlet.box > .portlet-title > .tools > a.fullscreen {
+		color: #ACACAC;
+	}
+
+	.portlet > .portlet-title > .caption {
+		font-size: 14px;
+		line-height: 15px;
+	}
+
+	.portlet > .portlet-title > .tools {
+	  padding: 10px 0 5px 0 !important;
+	}
+
+	.portlet > .portlet-title {
+		min-height: 35px !important;
+	}
+
+	.chart-wrapper {
+		overflow: clip;
+	}
+
+	.portlet > .portlet-title > .nav-tabs > li > a {
+		margin: 1px 0 0 1px !important;
+		padding: 4px 10px 3px 10px !important;
+	}
+
+	.table > tbody > tr > td {
+		border-top: 0px solid #ddd !important;
+	}
+
+	#tblStockTradingIndex.table > tbody > tr > td {
+		border-right: 2px solid #fff !important;
+		padding: 2px !important;
+	}
+
+	#tblRecommendationsPortfolio.table > tbody > tr {
+		border-bottom: 1px solid #ddd !important;
+	}
+
+	#chart_DailyActiveReport .highcharts-xaxis-labels span {
+		white-space: break-spaces !important;
+	}
+
+	.dropdown-checkboxes label {
+		font-weight: 500 !important;
+	}
+
+	#portlet_tab_biendong .nav > li > a {
+		padding: 7px 5px 3px 5px !important;
+		font-weight: 600 !important;
+	}
+
+	#portlet_tab_biendong .nav-tabs > li > a, #portlet_tab_biendong .nav-pills > li > a {
+		font-size: 12px !important;
+	}
+
+		#portlet_tab_biendong .nav-pills > li > a:hover {
+			background-color: transparent !important;
+		}
+
+	#portlet_tab_biendong .nav-pills > li.active > a, #portlet_tab_biendong .nav-pills > li.active > a:focus, #portlet_tab_biendong .nav-pills > li.active > a:hover {
+		color: #333 !important;
+		background-color: transparent !important;
+		border-bottom: 4px solid #337ab7 !important;
+	}
+
+	#chart_CPTheoVonHoa .highcharts-title, #chart_BienDongThanhKhoan .highcharts-title, #chart_BienDongChiSoTheoNganh .highcharts-title, #chart_CoPhieuAnhHuong .highcharts-title {
+		font-size: 1.0em !important;
+	}
+
+	#chart_BienDongThanhKhoan .highcharts-title {
+		width: 100% !important;
+		text-align: center !important;
+		left: 0px !important;
+	}
+
+	.chart, .pie, .bars {
+		height: 220px !important;
+	}
+
+	.btn.default:active, .btn.default.active {
+		background-image: none;
+		background-color: #c6c6c6 !important;
+	}
+</style>
+
+<div class="page-container" ng-cloak>
+	<div class="page-sidebar-wrapper">
+		<!-- BEGIN HORIZONTAL RESPONSIVE MENU -->
+		<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+		<!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+		<div class="page-sidebar navbar-collapse collapse" style="" aria-expanded="true">
+			<ul class="page-sidebar-menu" data-slide-speed="200" data-auto-scroll="true">
+				<!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+				<!-- DOC: This is mobile version of the horizontal menu. The desktop version is defined(duplicated) in the header above -->
+				
+				<li>
+					<a href="javascript:;">
+						THỊ TRƯỜNG <span class="arrow"> </span>
+					</a>
+					<ul class="sub-menu">
+						<li>
+							<a href="#" ng-click="ChooseMarket('VNINDEX', 1)"> VNINDEX </a>
+						</li>
+						<li>
+							<a href="#" ng-click="ChooseMarket('HNXINDEX', 2)"> HNXINDEX </a>
+						</li>
+						<li>
+							<a href="#" ng-click="ChooseMarket('UPCOMINDEX', 3)"> UPCOMINDEX </a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"> DANH MỤC CHUYÊN GIA </a>
+				</li>
+				<li>
+					<a href="#"> ROBOT PHÁT SINH </a>
+				</li>
+			</ul>
+		</div>
+		<!-- END HORIZONTAL RESPONSIVE MENU -->
+	</div>
+    <div class="splitter">
+        <div id="first">
+			<div class="portlet box blue" style="height:calc(100% - 0px);overflow: clip;">
+                <div class="portlet-title">
+					@* <div class="actions" style="float:left">
+						<div class="btn-group">
+							<a class="btn btn-default btn-sm" href="javascript:;" data-toggle="dropdown" aria-expanded="false">
+								<i class="fa fa-reorder"></i>
+							</a>
+							<ul class="dropdown-menu pull-left">
+								<li>
+									<a href="javascript:;" ng-click="LoadIndexChart('VN-Index')">
+										VN-Index
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;" ng-click="LoadIndexChart('HNX-Index')">
+										HNX-Index
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;" ng-click="LoadIndexChart('UPCOM-Index')">
+										UPCOM-Index
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div> *@
+                    <div class="caption">
+						Chỉ số chứng khoán
+                    </div>
+                    <div class="tools">
+						<a href="" class="fullscreen">
+                        </a>
+                    </div>
+                </div>
+				<div class="portlet-body" style="height: calc(100% - 35px) !important;overflow: auto; padding: 0px 5px 0px 5px !important;">
+                    @* <div id="chart_DailyTrendReport" style="height:350px;">
+                    </div> *@
+					@* <div id="chart_DailyActiveReport" style="height:350px;">
+					</div> *@
+					@* <fieldset class="requiresjcrop" style="padding-bottom: 10px;">
+						<div class="btn-group" id="btgrIndex">
+							<button class="btn default" id="btVN-Index" style="padding: 4px 8px;" ng-click="LoadIndexChart('VN-Index')">VN-Index</button>
+							<button class="btn default" id="btVN30" style="margin-left: 0px !important;padding: 4px 8px;">VN30</button>
+							<button class="btn default" id="btHNX-Index" style="margin-left: 0px !important;padding: 4px 8px;" ng-click="LoadIndexChart('HNX-Index')">HNX-Index</button>
+							<button class="btn default" id="btUPCOM-Index" style="margin-left: 0px !important;padding: 4px 8px;" ng-click="LoadIndexChart('UPCOM-Index')">UPCOM-Index</button>
+						</div>
+					</fieldset> *@
+					<table id="tblStockTradingIndex" class="table table-striped table-hover" style="margin-bottom:0px !important;margin-top: 2px;" cellpadding="0" cellspacing="2">
+						@* <thead>
+							<tr>
+								<th>
+									
+								</th>
+								<th>
+									Chỉ số
+								</th>
+								<th class="hidden-480">
+									Vol(tr)
+								</th>
+								<th class="hidden-480">
+									Val(tỷ)
+								</th>
+							</tr>
+						</thead> *@
+						<tbody>
+							<tr style="background-color: #E5E5E5 !important;">
+								@* <td>
+									{{x.Code}}
+								</td> *@
+								<td ng-repeat="x in StockTradingIndex" style="text-align: center;">
+									<p style="font-weight: 600;margin: 0;">{{x.Code}}</p>
+									<p style="margin: 0;" ng-class="GetClassIndex(x.CurrentPrice - x.Open)">{{ x.CurrentPrice | number:2 | formatNumber : 'vi-VN'}}</p>
+									<p style="margin: 0;" ng-class="GetClassIndex(x.CurrentPrice - x.Open)">
+										{{x.CurrentPrice - x.Open > 0 ? '+' : ''}}{{ (x.CurrentPrice - x.Open) | number:2 | formatNumber : 'vi-VN'}}
+										({{x.CurrentPrice - x.Open > 0 ? '+' : ''}}{{ (x.CurrentPrice - x.Open)/x.Open*100 | number:2 | formatNumber : 'vi-VN'}}%)
+									</p>
+								</td>
+								@* <td>
+									<p style="margin: 0;text-align:center">{{ x.Volume | number:2 | formatNumber : 'vi-VN'}}tr</p>
+									<p style="margin: 0;text-align:center">{{ x.Value | number:2 | formatNumber : 'vi-VN'}} tỷ</p>
+								</td> *@
+							</tr>
+						</tbody>
+					</table>
+					<table style="width:100%; margin-bottom: 10px;border-top: 1px solid #ddd !important; margin-top: 5px;" cellpadding="5" cellspacing="5" ng-if="MarketIndex != null">
+						<tr>
+							<td>
+								<p style="font-size: 16px;margin: 0;text-align:center">{{ MarketSymbol }}</p>
+								@* <p style="font-weight: 600;margin: 0;text-align:center" class="ng-binding index-increase">24.700</p>
+								<p style="font-weight: 600;margin: 0;text-align:center" class="ng-binding index-increase">
+									+1.500 (+6.47%)
+								</p>
+								<p style="margin: 0;text-align:center">Vol: 53tr</p>
+								<p style="margin: 0;text-align:center">Val: 1,200 tỷ</p> *@
+							</td>
+							<td>
+								@* <p style="font-size: 16px;margin: 0;text-align:center">VN30</p> *@
+								<p style="font-weight: 600;margin: 0;text-align:right">
+									@* {{ (StockTradingIndex | filter : {'Code':'VN-Index'})[0].CurrentPrice | number:2 | formatNumber : 'vi-VN' }} *@
+									{{ MarketIndex.CurrentPrice | number:2 | formatNumber : 'vi-VN' }}
+								</p>
+								<p style="font-weight: 600;margin: 0;text-align:right" ng-class="GetClassIndex(MarketIndex.CurrentPrice - MarketIndex.Open)">
+									{{MarketIndex.CurrentPrice - MarketIndex.Open > 0 ? '+' : ''}}{{ (MarketIndex.CurrentPrice - MarketIndex.Open) | number:2 | formatNumber : 'vi-VN'}}
+									({{MarketIndex.CurrentPrice - MarketIndex.Open > 0 ? '+' : ''}}{{ (MarketIndex.CurrentPrice - MarketIndex.Open)/MarketIndex.Open*100 | number:2 | formatNumber : 'vi-VN'}}%)
+								</p>
+								@* <p style="margin: 0;text-align:center">Vol: 53tr</p>
+								<p style="margin: 0;text-align:center">Val: 1,200 tỷ</p> *@
+							</td>
+							<td style="padding-right: 5px;">
+								@* <p style="font-size: 16px;margin: 0;text-align:center">VN30</p>
+								<p style="font-weight: 600;margin: 0;text-align:center" class="ng-binding index-increase">24.700</p>
+								<p style="font-weight: 600;margin: 0;text-align:center" class="ng-binding index-increase">
+									+1.500 (+6.47%)
+								</p> *@
+								<p style="margin: 0;text-align:right">{{ MarketIndex.Volume | number:2 | formatNumber : 'vi-VN' }} tr</p>
+								<p style="margin: 0;text-align:right">{{ MarketIndex.Value | number:2 | formatNumber : 'vi-VN' }} tỷ</p>
+							</td>
+						</tr>
+					</table>
+					<div id="tv_chart_index"></div>
+                    @* <div class="chart-wrapper">
+						<div id="tv_chart_index" class="chart" style="width: calc(100% + 0px);left: -10px;"></div>
+                    </div> *@
+
+					<div class="col-md-12" style="display: flex;border-bottom: 1px solid #ddd !important;">
+						<div class="requiresjcrop" style="text-align: center;max-width: calc(100% - 110px);">
+							<button id="setSelect" class="btn default">1d</button>
+							<button id="animateTo" class="btn default">1m</button>
+							<button id="release" class="btn default">3m</button>
+							<button id="1" class="btn default">6m</button>
+							<button id="2" class="btn default">1y</button>
+							<button id="3" class="btn default">3y</button>
+							<button id="4" class="btn default">5y</button>
+						</div>
+						@* <div class="chart-wrapper" style="width:110px; overflow:inherit">
+							<div class="highcharts-popup highcharts-popup-indicators">
+								<span class="highcharts-close-popup">×</span>
+								<div class="highcharts-popup-wrapper">
+									<label for="indicator-list">Indicator</label>
+									<select name="indicator-list">
+										<option value="sma">SMA</option>
+										<option value="ema">EMA</option>
+										<option value="bb">Bollinger bands</option>
+									</select>
+									<label for="stroke">Period</label>
+									<input type="text" name="period" value="14" />
+								</div>
+								<button>Add</button>
+							</div>
+							<div class="highcharts-popup highcharts-popup-annotations">
+								<span class="highcharts-close-popup">×</span>
+								<div class="highcharts-popup-wrapper">
+									<label for="stroke">Color</label>
+									<input type="text" name="stroke" />
+									<label for="stroke-width">Width</label>
+									<input type="text" name="stroke-width" />
+								</div>
+								<button>Save</button>
+							</div>
+							<div class="highcharts-stocktools-wrapper highcharts-bindings-container highcharts-bindings-wrapper">
+								<div class="highcharts-menu-wrapper">
+									<ul class="highcharts-stocktools-toolbar stocktools-toolbar" style="margin: 7px 0px 0px 0px;padding: revert;width: calc(100% - 0px);">
+										<li class="highcharts-indicators" title="Indicators">
+											<span class="highcharts-menu-item-btn"></span>
+										</li>
+
+										<li class="highcharts-series-type-ohlc" title="Type change">
+											<span class="highcharts-menu-item-btn"></span>
+											<span class="highcharts-submenu-item-arrow highcharts-arrow-right"></span>
+											<ul class="highcharts-submenu-wrapper">
+												<li class="highcharts-series-type-ohlc" title="OHLC">
+													<span class="highcharts-menu-item-btn"></span>
+													<p class="highcharts-menu-item-title">OHLC</p>
+												</li>
+												<li class="highcharts-series-type-line" title="Line">
+													<span class="highcharts-menu-item-btn"></span>
+													<p class="highcharts-menu-item-title">Line</p>
+												</li>
+												<li class="highcharts-series-type-candlestick" title="Candlestick">
+													<span class="highcharts-menu-item-btn"></span>
+													<p class="highcharts-menu-item-title">Candlestick</p>
+												</li>
+											</ul>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+						</div> *@
+						
+					</div>
+					
+					@* <table style="width:100%;max-width: calc(100% - 10px);" cellpadding="5" cellspacing="5">
+						<tr>
+							<td style="width: 25px;padding: 0px 5px 8px 5px; font-size: 16px;">
+								1d
+							</td>
+							<td>
+								<input id="range_1" type="text" name="range_1" value="" />
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 25px;padding: 0px 5px 8px 5px; font-size: 16px;">
+								52w
+							</td>
+							<td>
+								<input id="range_2" type="text" name="range_2" value="1000;100000" data-type="double" data-step="1000" data-postfix=" " data-from="30000" data-to="90000" data-hasgrid="false" />
+							</td>
+						</tr>
+					</table> *@
+
+					<table style="width:200px; max-width:500px;margin: 0 auto;" cellpadding="5" cellspacing="5">
+						<tr style="line-height:2;border-bottom: 0px solid #ddd;">
+							<td style="text-align:left">Hourly</td>
+							<td style="text-align:center">Daily</td>
+							<td style="text-align:right">Weekly</td>
+						</tr>
+						<tr style="line-height:2" ng-if="TradingIndex != null">
+							<td style="text-align:left;font-weight: 600;text-transform: uppercase;">{{TradingIndex.Trend.T1}}</td>
+							<td style="text-align:center;font-weight: 600;text-transform: uppercase;">{{TradingIndex.Trend.T1}}</td>
+							<td style="text-align:right;font-weight: 600;text-transform: uppercase;">{{TradingIndex.Trend.T1}}</td>
+						</tr>
+					</table>
+					<div style="width:100%; float:left; padding-top: 20px;">
+						<div style="width:170px; float:left; padding-bottom:15px">
+							<div id="chart_gauge_rsi_2" style="width:145px; height:120px;">
+							</div>
+						</div>
+						<div style="width:calc(100% - 170px); float:left">
+							<figure class="highcharts-figure" style="float:left; margin-left:0px;min-width: 160px; width:100%;max-width:100%">
+								<div style="font-size: 12px; font-weight: 600;">
+									Động lượng (RSI)
+								</div>
+								<div id="chart_BulletGraph_1" style="height:22px;margin-left:0px;"></div>
+								<div style="font-size: 12px; font-weight: 600;">
+									Biến động (ATR)
+								</div>
+								<div id="chart_BulletGraph_2" style="height:22px;margin-left:0px;"></div>
+								<div style="font-size: 12px; font-weight: 600;">
+									Khối lượng (Volume)
+								</div>
+								<div id="chart_BulletGraph_3" style="height:22px;margin-left:0px;"></div>
+							</figure>
+						</div>
+					</div>
+					@* <table style="width:100%; margin-top:15px" cellpadding="5" cellspacing="5">
+						<tr>
+							<td style="min-width:170px; max-width:260px;text-align: -moz-center;">
+								<div id="chart_gauge_rsi_2" style="width:145px; height:130px;max-width:550px;">
+								</div>
+							</td>
+							<td style="padding-left:10px; width:100%">
+								<figure class="highcharts-figure" style="float:left; margin-left:0px;min-width: 160px; width:100%;max-width:100%">
+									<div style="font-size: 12px; font-weight: 600;">
+										Động lượng (RSI)
+									</div>
+									<div id="chart_BulletGraph_1" style="height:22px;margin-left:0px;"></div>
+									<div style="font-size: 12px; font-weight: 600;">
+										Biến động (ATR)
+									</div>
+									<div id="chart_BulletGraph_2" style="height:22px;margin-left:0px;"></div>
+									<div style="font-size: 12px; font-weight: 600;">
+										Khối lượng (Volume)
+									</div>
+									<div id="chart_BulletGraph_3" style="height:22px;margin-left:0px;"></div>
+								</figure>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="height:10px"></td>
+						</tr>
+					</table> *@
+
+					<div style="width:100%; float:left; padding-top:5px;border-top: 1px solid #ddd !important;">
+						<p class="caption-subject font-blue-madison bold uppercase">Nhận định</p>
+						<div class="">
+							<p>Thị trường chưa thực sự tiêu cực, nhưng cũng không còn tích cực rõ ràng.</p>
+							<p>Cần quan sát thêm phản ứng của VN-Index quanh vùng EMA 21 (~1,251).</p>
+						</div>
+						
+					</div>
+
+					@* <div class="col-md-12" style="padding: 0px">
+						<div class="col-md-6 col-sm-12" style="padding: 0px">
+							<div id="chart_Speedometer_adx" style="height:150px;max-width:350px">
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-12" style="padding: 0px">
+							<div id="chart_Speedometer_rsi" style="height:150px;max-width:350px">
+							</div>
+						</div>
+					</div> *@
+					@* <div id="chart_BulletGraph_1" style="height:50px;">
+					</div>
+					<div id="chart_BulletGraph_2" style="height:50px;">
+					</div>
+					<div id="chart_BulletGraph_3" style="height:50px;">
+					</div> *@
+					
+                </div>
+            </div>
+        </div>
+        <div id="separator"></div>
+        <div id="second">
+			<div class="portlet box blue" style="height: calc(100% - 0px);overflow: clip;">
+				<div class="portlet-title tabbable-line tabbable-full-width sticky-top">
+					<ul class="nav nav-tabs" style="float:left;flex: 1;" id="header-tabs">
+						<li class="active">
+							<a href="#portlet_tab_biendong" data-toggle="tab" ng-click="Tab.Main = ''; ChooseTab()">
+								Biến động
+							</a>
+						</li>
+						<li>
+							<a href="#portlet_tab_xuhuong" data-toggle="tab" ng-click="Tab.Main = 'XuHuong'; ChooseTab()">
+								Xu hướng
+							</a>
+						</li>
+						<li>
+							<a href="#portlet_tab_dinhgia" data-toggle="tab" ng-click="Tab.Main = ''; ChooseTab()">
+								Định giá
+							</a>
+						</li>
+						<li>
+							<a href="#portlet_tab_cophieu" data-toggle="tab" ng-click="Tab.Main = ''; ChooseTab()">
+								Cổ phiếu
+							</a>
+						</li>
+						<li>
+							<a href="#portlet_tab_bieudoptkt" data-toggle="tab" ng-click="Tab.Main = 'BDPTKT'; ChooseTab()">
+								Biểu đồ
+							</a>
+						</li>
+					</ul>
+					<div class="tools" style="display: block ruby;">
+						<fieldset class="requiresjcrop" style="">
+							<div class="btn-group" id="btgrIndex" style="margin-top: -10px;">
+								<button class="btn default active" id="btVNINDEX" style="padding: 0px 4px;" ng-click="ChooseMarket('VNINDEX', 1)">HSX</button>
+								<button class="btn default" id="btHNXINDEX" style="margin-left: 0px !important;padding: 0px 4px;" ng-click="ChooseMarket('HNXINDEX', 2)">HNX</button>
+								<button class="btn default" id="btUPCOMINDEX" style="margin-left: 0px !important;padding: 0px 4px;" ng-click="ChooseMarket('UPCOMINDEX', 3)">UPCOM</button>
+							</div>
+						</fieldset>
+						<a href="" class="fullscreen">
+						</a>
+					</div>
+				</div>
+				<div class="portlet-body" style="height: calc(100% - 0px) !important;padding-top: 0px;">
+					<div class="tab-content" style="height:calc(100% - 0px)">
+						<div class="tab-pane active" id="portlet_tab_biendong" style="height:100%">
+							<div class="tabbable tabbable-tabdrop" style="height:100%">
+								<ul class="nav nav-pills sticky-topp" id="sub-tabs">
+									<li class="">
+										<a href="#tab_tongquan" data-toggle="tab" aria-expanded="false" ng-click="Tab.Child = 'TongQuan'; ChooseChildTab()">TỔNG QUAN</a>
+									</li>
+									<li class="">
+										<a href="#tab_bando" data-toggle="tab" aria-expanded="false" ng-click="Tab.Child = 'BanDo'; ChooseChildTab()">BẢN ĐỒ</a>
+									</li>
+									<li class="active">
+										<a href="#tab_cungcau" data-toggle="tab" aria-expanded="false" ng-click="Tab.Child = 'CungCau'; ChooseChildTab()">CUNG CẦU</a>
+									</li>
+									<li class="">
+										<a href="#tab_khoingoai" data-toggle="tab" aria-expanded="false" ng-click="Tab.Child = 'KhoiNgoai'; ChooseChildTab()">KHỐI NGOẠI</a>
+									</li>
+									<li class="dropdown pull-right tabdrop">
+										<div ng-if="Tab.Child != 'BanDo'" style="padding-right: 10px;float:left;display: block ruby;height: 34px; padding: 7px 10px;">
+											<span id="btgrLoaiBienDong2">
+												<a id="" class="active coLBD1D" ng-click="ChonLoaiChartBienDong($event, '1', '1D')">1d</a> |
+												<a class="coLBD1W" ng-click="ChonLoaiChartBienDong($event, '7', '1W')">1w</a> |
+												<a class="coLBD" ng-click="ChonLoaiChartBienDong($event, '30', '')">1m</a>
+											</span>
+										</div>
+										<select id="selIndex" ng-if="Tab.Child != 'BanDo'" class="form-control input-xsmall" style="border: 0px solid #e5e5e5;width: 100px !important;" ng-model="IndexId" ng-change="ChooseIndex()">
+											<option ng-selected="{{x.Id == IndexId}}" ng-repeat="x in StockIndexes" value="{{x.Id}}">{{x.Code}}</option>
+										</select>
+										<div class="actions" ng-if="Tab.Child == 'BanDo'">
+											<div class="btn-group btn-group-devided" data-toggle="buttons">
+												<label class="btn btn-transparent grey-salsa btn-circle btn-sm active" ng-click="Tab.Type = 'MarketCap'; ProcessTabBanDo()">
+													<input type="radio" name="options" class="toggle" id="option1">Vốn hóa
+												</label>
+												<label class="btn btn-transparent grey-salsa btn-circle btn-sm" ng-click="Tab.Type = 'TradingValue'; ProcessTabBanDo()">
+													<input type="radio" name="options" class="toggle" id="option2">GTGD
+												</label>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div class="tab-content" style="height:100%">
+									<div class="tab-pane" id="tab_tongquan" style="height:100%">
+										<div class="table-responsive" style="height:calc(100% - 75px);overflow: auto;">
+											@* <div class="grid-container">
+												<div class="col-md-6">
+													<div id="chart_CPTheoVonHoa">
+													</div>
+
+													<div id="chart_BienDongChiSoTheoNganh">
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div id="chart_BienDongThanhKhoan">
+													</div>
+												</div>
+
+												<div class="col-md-6">
+													<div id="chart_CoPhieuAnhHuong">
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div id="chart_GDKhoiNgoai">
+													</div>
+												</div>
+
+												<div id="chart_CPTheoVonHoa">
+												</div>
+
+												<div id="chart_BienDongThanhKhoan">
+												</div>
+
+												<div id="chart_BienDongChiSoTheoNganh">
+												</div>
+																								
+												<div id="chart_CoPhieuAnhHuong">
+												</div>
+
+												<div id="chart_GDKhoiNgoai">
+												</div>
+												<!-- </div> -->
+											</div> *@
+											<div class="col-md-12" style="padding-left:0px; padding-right:0px;">
+												<div class="col-md-6" style="padding-left:0px; padding-right:0px">
+													<div id="chart_CPTheoVonHoa" style="height:220px;">
+													</div>
+
+													<div id="chart_BienDongChiSoTheoNganh" style="height:250px;">
+													</div>
+												</div>
+												<div class="col-md-6" style="padding-right:0px">
+													<div id="chart_BienDongThanhKhoan">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12" style="padding-left:0px; padding-right:0px">
+												<div class="col-md-6" style="padding-left:0px; padding-right:0px">
+													<div id="chart_CoPhieuAnhHuong" style="height:200px;">
+													</div>
+												</div>
+												<div class="col-md-6" style="padding-right:0px">
+													@* <div id="chart_GDKhoiNgoaiTuDoanh" style="height:250px;">
+													</div> *@
+													<div id="chart_GDKhoiNgoai" style="height:200px;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane" id="tab_bando" style="height:calc(100% - 75px);overflow: auto;">
+										<div id="chart_BanDo_CoPhieuAnhHuong" style="height:200px"></div>
+										<div id="chart_BanDo" style=""></div>
+									</div>
+									<div class="tab-pane active" id="tab_cungcau" style="height:100%">
+										<div class="table-responsive" style="height:calc(100% - 75px);overflow: auto;">
+
+											<div id="second_top" class="col-md-12" style="height:30%;padding-left:0px; padding-right:0px">
+												<div class="col-md-3" style="padding-left:0px; padding-right:0px">
+													<figure class="highcharts-figure22" style="">
+														<div class="PieChart_Stocks" id="PieChart_Stocks" style="height:250px;"></div>
+													</figure>
+												</div>
+												<div class="col-md-9" style="padding-right:0px">
+													<div id="chart_DailyActiveReport" style="height:250px;">
+													</div>
+												</div>
+											</div>
+											<div id="splitMarketMap" class="col-md-12" style="padding-left:0px; padding-right:0px">
+												<div class="slider-value" style="margin-left: 18px;">
+													<span style="text-transform:uppercase;font-size: 0.9em;font-weight: bold;">Bản đồ thị trường</span>
+													<div class="btn-group" style="padding-left: 5px;">
+														<button class="btn default" style="padding: 4px 8px;" ng-click="LoadBienDongChart_All(-1, 0)"><i class="fa fa-circle" style="color:gray"></i> Tất cả</button>
+													</div>
+													<div style="float:right">
+														<ul class="highcharts-stocktools-toolbar stocktools-toolbar" style="width: auto; padding-right: 6px;">
+															<li class="highcharts-full-screen right" title="Fullscreen" style="height: 25px;" ng-click="FullScreenBubbleChart()">
+																<span class="highcharts-menu-item-btn"></span>
+															</li>
+														</ul>
+													</div>
+													@* <span style="padding-left:20px">{{FromTradingDateActive | date: 'dd-MM-yyyy'}} - {{ToTradingDateActive | date: 'dd-MM-yyyy'}}</span> *@
+												</div>
+												<div id="chart_Fluctuation">
+												</div>
+												<div style="padding-left: 5px;margin-top: -5px; position: inherit;">
+													<div style="padding-right: 10px;float:left;display: block ruby;">
+														<span id="btgrLoaiBienDong">
+															<a class="active coLBD1D" ng-click="ChonLoaiChartBienDong($event, '1', '1D')">1d</a> |
+															<a class="coLBD1W" ng-click="ChonLoaiChartBienDong($event, '7', '1W')">1w</a> |
+															<a class="coLBD" ng-click="ChonLoaiChartBienDong($event, '30', '')">1m</a>
+														</span>
+													</div>
+													@* <i class="fa fa-play" id="btPlayChart" ng-click="Chart_Play(true)" style="vertical-align: top;margin: 6px 0px 0px 2px;"></i>
+													<i class="fa fa-pause" id="btPauseChart" ng-click="Chart_Play(false)" style="display:none;vertical-align: top;margin: 6px 0px 0px 2px;"></i> *@
+													<a ng-click="Chart_Play()" class="" style="background-color: #67809F;padding: 0px 1px 3px 0px; margin-right: 5px;color: #FFF;width: 52px; display: inline-block; text-align: center;">
+														{{TextPlay}}
+													</a>
+													<div id="slider-range-date-biendong" class="slider bg-purple" style="min-height:2px;width: calc(100% - 150px); display: inline-table;margin: 5px 0px 5px -3px;background-color: #999 !important;vertical-align: middle;">
+													</div>
+													<div class="col-md-6" style="float:left;padding-left: 139px;">
+														<span ng-if="DateRange == ''">{{FromTradingDateActive | date: 'dd-MM-yyyy'}}</span>
+														<span ng-if="DateRange == '1D'">{{FromTradingTimeActive}}</span>
+														<span ng-if="DateRange == '1W'">{{FromTradingTimeActive | date: 'dd-MM-yyyy HH:mm'}}</span>
+													</div>
+													<div style="float:right;padding-right: 10px;">
+														<span ng-if="DateRange == ''">{{ToTradingDateActive | date: 'dd-MM-yyyy'}}</span>
+														<span ng-if="DateRange == '1D'">{{ToTradingTimeActive}}</span>
+														<span ng-if="DateRange == '1W'">{{ToTradingTimeActive | date: 'dd-MM-yyyy HH:mm'}}</span>
+													</div>
+												</div>
+												@* <div class="col-md-12">
+												<fieldset class="requiresjcrop" style="padding-bottom: 10px;text-align:center">
+												<div class="btn-group" style="padding-left: 5px; padding-bottom: 5px;">
+												<button class="btn default" style="padding: 4px 8px;" ng-click="LoadBienDongChart(-1, 0)"><i class="fa fa-circle" style="color:gray"></i> Tất cả</button>
+												</div>
+												<div class="btn-group" ng-repeat="x in categoriesIndustry" style="padding-left: 5px; padding-bottom: 5px;">
+												<button class="btn default" style="padding: 4px 8px;" ng-click="LoadBienDongChart(x.Code, $index)"><i class="fa fa-circle" style="color:{{x.Color}}"></i> {{x.Name}}</button>
+												</div>
+												</fieldset>
+												</div> *@
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane" id="tab_khoingoai">
+										<p>
+											Khối ngoại.
+										</p>
+									</div>
+									
+								</div>
+							</div>
+
+							
+						</div>
+						<div class="tab-pane" id="portlet_tab_xuhuong" style="height:100%">
+							<div class="table-responsive" style="height:calc(100% - 35px);overflow: auto;">
+								@* <div style="padding-right: 10px; padding-top:5px; float:right;display: block ruby;width:100%;position: relative;">
+									
+									<div style="overflow: auto;  width: calc(100% - 200px);  position: absolute;  margin-top: -15px !important;  display: block ruby;  height: 35px;">
+										<ul class="list-inline sidebar-tags">
+											<li ng-repeat="x in XuHuongNganh">
+												<a href="javascript:;" class="btn default btn-sm" ng-if="x.Check">
+													{{x.Code}}<i class="fa fa-times" ng-click="SelectionIndustry(x.Id)"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+
+									<div class="actions" style="float:right">
+										<div class="form-group" style="width:100px; padding-left: 10px;">
+											<input id="range_xuhuong_phien" type="text" name="range_xuhuong_phien" value="" />
+										</div>
+
+									</div>
+									<div class="actions" style="float:right">
+										<div class="btn-group">
+											<a class="btn btn-sm btn-default dropdown-toggle" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+												Ngành <i class="fa fa-angle-down"></i>
+											</a>
+											<div class="dropdown-menu hold-on-click dropdown-checkboxes pull-right">
+												<label ng-repeat="x in XuHuongNganh">
+													<input type="checkbox" ng-model="indexIndustryValue[x.Id]" ng-checked="x.Check" value="{{x.Id}}" ng-click="SelectionIndustry(x.Id)" />
+													{{x.Code}}
+												</label>
+											</div>
+										</div>
+									</div>
+								</div> *@
+								<div id="xh-header" class="sticky-top" style="top: 40px">
+									<div id="dropdown-btns" style="padding-left:10px">
+										<div class="dropdown-container">
+											<button class="dropdown-btn">
+												<span>
+													<i class="fa fa-plus"></i>
+												</span>
+												Mã CK
+											</button>
+											<div class="dropdown-content" id="maCkDropdown">
+												<input type="text" class="search-input" placeholder="Mã CK..." ng-model="XuHuongStock" id="XuHuong_Stock_Search" ng-keyup="Complete_XuHuong_Stock()" />
+												<div id="ma-ck-options">
+													<label class="checkbox-item" ng-repeat="x in StockArray"><input type="checkbox" ng-model="indexStockValue[x]" ng-checked="true" value="{{x}}" ng-click="SelectionStock(x)" /> {{x}}</label>
+												</div>
+											</div>
+										</div>
+										<div class="dropdown-container">
+											<button class="dropdown-btn">
+												Ngành
+												<span>
+													<i class="fa fa-angle-down"></i>
+												</span>
+											</button>
+											<div class="dropdown-content">
+												<label class="checkbox-item" ng-repeat="x in XuHuongNganh"><input type="checkbox" ng-model="indexIndustryValue[x.Id]" ng-checked="x.Check" value="{{x.Id}}" ng-click="SelectionIndustry(x.Id)"/> {{x.Code}}</label>
+											</div>
+										</div>
+									</div>
+									<div class="slider-container" style="padding-right:10px">
+										<div class="form-group" style="width:100px; padding-left: 10px;">
+											<input id="range_xuhuong_phien" type="text" name="range_xuhuong_phien" value="" />
+										</div>
+									</div>
+								</div>
+								@* <div class="col-md-12" style="padding-left:0px; padding-right:0px; padding-top: 10px;">
+									<div class="col-md-6" style="padding-left:0px; padding-right:0px">
+										<div class="form-group" style="width:100px; padding-left: 10px;">
+											<input id="range_xuhuong_phien" type="text" name="range_xuhuong_phien" value="" />
+										</div>
+									</div>
+									<div class="col-md-6" style="padding-right:0px">
+										<div class="btn-group" style="float:right">
+											<a class="btn btn-sm btn-default dropdown-toggle" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+												Ngành <i class="fa fa-angle-down"></i>
+											</a>
+											<div class="dropdown-menu hold-on-click dropdown-checkboxes pull-right">
+												<label ng-repeat="x in XuHuongNganh">
+													<input type="checkbox" ng-model="indexIndustryValue[x.Id]" ng-checked="x.Check" value="{{x.Id}}" ng-click="SelectionIndustry(x.Id)" />
+													{{x.Code}}
+												</label>
+											</div>
+										</div>
+									</div>
+								</div> *@
+
+								<div id="second_top" class="col-md-12" style="padding-left:0px; padding-right:0px">
+									<div class="col-md-3" style="padding-left:0px; padding-right:0px">
+										<figure class="highcharts-figure" style="min-width: 200px;">
+											<div class="PieChart_Stocks" id="PieChart_Stocks_xuhuong" style="height:250px;"></div>
+										</figure>
+									</div>
+									<div class="col-md-9">
+										<div id="chart_XuHuong_TangTruong" style="height:250px;">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12" style="padding-left:0px; padding-right:0px;">
+									<div id="chart_RelativeRotationGraph">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="portlet_tab_dinhgia" style="height:100%">
+							<div class="table-responsive" style="height:calc(100% - 35px);overflow: auto;">
+								
+							</div>
+						</div>
+						<div class="tab-pane" id="portlet_tab_cophieu" style="height:calc(100% - 35px);overflow: auto;">
+							<div class="table-responsive">
+								<table class="table table-striped table-bordered table-advance table-hover dataTable">
+									<thead>
+										<tr>
+											<th>
+												#
+											</th>
+											<th>
+												Ngày
+											</th>
+											<th>
+												@ONE_WEB.Resources.MyResources.GetResourceByKey("Code", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)
+											</th>
+											<th>
+												Mở cửa
+											</th>
+											<th>
+												Cao nhất
+											</th>
+											<th>
+												Thấp nhất
+											</th>
+											<th>
+												Trung bình
+											</th>
+											<th>
+												Đóng cửa
+											</th>
+											<th>
+												Thay đổi
+											</th>
+											<th>
+												Khối lượng
+											</th>
+											<th>
+												KL Mua
+											</th>
+											<th>
+												KL Bán
+											</th>
+											<th>
+												GT Mua
+											</th>
+											<th>
+												GT Bán
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr ng-repeat="x in StockTrading" ng-class="$index % 2 == 0 ? 'odd' : 'even' ">
+											<td>
+												{{x.Row}}
+											</td>
+											<td>
+												{{x.Date | date: 'dd-MM-yyyy'}}
+											</td>
+											<td style="font-weight:700">
+												{{x.Code}}
+											</td>
+											<td class="text-right">
+												{{ x.Open | number | formatNumber : 'vi-VN'}}
+											</td>
+											<td class="text-right">
+												{{ x.High | number | formatNumber : 'vi-VN'}}
+											</td>
+											<td class="text-right">
+												{{ x.Low | number | formatNumber : 'vi-VN'}}
+											</td>
+											<td class="text-right">
+												{{ x.AveragePrice | number | formatNumber : 'vi-VN'}}
+											</td>
+											<td class="text-right">
+												{{ x.Close | number | formatNumber : 'vi-VN'}}
+											</td>
+											<td class="text-right" ng-class="GetClassBackground(x.Close - x.Open)">
+												<span ng-class="GetClassIndex(x.Close - x.Open)">
+													{{x.Close - x.Open > 0 ? '+' : ''}}{{ (x.Close - x.Open)/x.Open*100 | number:2 | formatNumber : 'vi-VN'}}%
+												</span>
+											</td>
+											<td class="text-right">
+												{{ x.Volume | number | formatNumber : 'vi-VN'}}
+											</td>
+											<td class="text-right">
+												{{ x.BuyVolume | number | formatNumber : 'vi-VN'}}
+											</td>
+											<td class="text-right">
+												{{ x.SellVolume | number | formatNumber : 'vi-VN'}}
+											</td>
+											<td class="text-right">
+												{{ x.BuyValue | number | formatNumber : 'vi-VN'}}
+											</td>
+											<td class="text-right">
+												{{ x.SellValue | number | formatNumber : 'vi-VN'}}
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="row">
+								<div class="col-md-5 col-sm-12">
+									<div class="dataTables_info" id="sample_1_info" role="status" aria-live="polite">
+										{{FromRowStockTrading}} @ONE_WEB.Resources.MyResources.GetResourceByKey("To", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value) {{ToRowStockTrading}} @ONE_WEB.Resources.MyResources.GetResourceByKey("Of", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value) {{TotalRowStockTrading}} @ONE_WEB.Resources.MyResources.GetResourceByKey("Entries", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)
+										<span>
+											<span class="seperator" style="padding-right:2px">|</span>
+											@ONE_WEB.Resources.MyResources.GetResourceByKey("View", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)
+											<select id="selRecordStockTrading" ng-init="10" ng-model="PageSize" ng-change="GetStockTrading(1)" name="datatable_history_length" aria-controls="datatable_history" class="form-control input-xsmall input-sm input-inline">
+												<option value="" selected hidden />
+												<option ng-repeat="item in ListPageSize"
+														ng-selected="item.Id == 10" value="{{item.Id}}">
+													{{item.Text}}
+												</option>
+											</select>
+										</span>
+									</div>
+								</div>
+								<div class="col-md-7 col-sm-12">
+									<div class="dataTables_paginate paging_bootstrap_full_number">
+										<ul class="pagination" id="pagerStockTrading">
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="portlet_tab_bieudoptkt">
+							<div style="height:100%; padding-top: 15px" id="tv_chart_container"></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+        </div>
+        <div id="separator2"></div>
+        <div id="third">
+            <div id="ContentWatchlist" class="tabcontent">
+				<div class="portlet box blue" style="height: calc(100% - 0px);overflow: clip;">
+                    <div class="portlet-title">
+						<div class="caption" style="padding: 3px 0 2px 0;width: calc(100% - 20px);">
+                            @* <i class="fa fa-gift"></i>Watchlist *@
+							<select id="form_control_1" class="form-control" data-placeholder="Danh mục theo dõi" tabindex="1" style="height: 30px; padding: 5px 5px;border: 0px solid #e5e5e5;">
+								<option value="Category 1">Danh mục 1</option>
+								<option value="Category 2">Danh mục 2</option>
+								<option value="Category 3">Danh mục 5</option>
+								<option value="Category 4">Danh mục 4</option>
+							</select>
+							<div class="form-control-focus">
+							</div>
+                        </div>
+
+                        <div class="tools">
+                            <a href="" class="fullscreen">
+                            </a>
+                        </div>
+                       @*  <ul class="nav nav-tabs">
+							<li class="active">
+                                <a href="#portlet_tab1" data-toggle="tab">
+                                    Danh sách
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#portlet_tab2" data-toggle="tab">
+                                    Bài viết
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#portlet_tab3" data-toggle="tab">
+                                    Cộng đồng
+                                </a>
+                            </li>
+							<li>
+								<a href="#portlet_tab4" data-toggle="tab">
+									Cảnh báo
+								</a>
+							</li>
+                        </ul> *@
+
+                    </div>
+					<div class="portlet-body" style="height: calc(100% - 35px) !important;padding: 0px 5px 0px 5px !important;">
+						<div class="tab-content" style="height:calc(100% - 44px)">
+							<div class="tab-pane active" id="portlet_tab1" style="height:100%">
+								<div class="table-responsive" style="height:calc(100% - 0px);overflow: auto;">
+									<table class="table table-striped table-advance table-hover dataTable" id="tblRecommendationsPortfolio" style="margin-top:0px !important; table-layout: fixed;">
+										<tbody>
+											<tr class="sortme" ng-repeat="x in RecommendationsPortfolio" ng-class="$index % 2 == 0 ? 'odd' : 'even' ">
+												<td style="width:10px;vertical-align: middle;">
+													{{x.Row}}
+												</td>
+												<td style="width: 100%;">
+													<a ng-click="ShowStock(x)" style="font-weight:700; color:#5b9bd1">{{x.Code}}</a>
+													<p style="white-space: nowrap;  text-overflow: ellipsis;  overflow: hidden;max-width: calc(100% - 110px);position: inherit;" title="{{x.Name}}">
+														{{x.Name}}
+													</p>
+													@* <div style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis; max-width: calc(100% - 110px);">
+														{{x.Name}}
+													</div> *@
+												</td>
+												<td class="text-center" style="width:100px;text-align:right;float:right; font-weight:600">
+													<span>{{ x.CurrentPrice | number | formatNumber}}</span>
+													<span style="white-space: pre-line;" ng-class="GetClassIndex(x.CurrentPrice - x.BuyPrice)">
+														{{x.CurrentPrice - x.BuyPrice > 0 ? '+' : ''}}{{x.CurrentPrice - x.BuyPrice | number | formatNumber}} / {{x.CurrentPrice - x.BuyPrice > 0 ? '+' : ''}}{{ (x.CurrentPrice - x.BuyPrice)/x.BuyPrice*100 | number:2 | formatNumber}}%
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="chat-form" style="margin-top: 0px; padding: 5px;">
+									<div class="input-cont">
+										<input class="form-control" type="text" placeholder="Thêm mã CK...">
+									</div>
+									<div class="btn-cont">
+										<span class="arrow">
+										</span>
+										<a href="" class="btn blue icn-only">
+											<i class="fa fa-check icon-white"></i>
+										</a>
+									</div>
+								</div>
+                            </div>
+                            @* <div class="tab-pane" id="portlet_tab2">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo.
+                                </p>
+                            </div>
+                            <div class="tab-pane" id="portlet_tab3">
+                                <p>
+                                    Ut wisi enim ad btn-smm veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                                </p>
+                            </div>
+							<div class="tab-pane" id="portlet_tab4">
+								<p>
+									Ut wisi enim ad btn-smm veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+								</p>
+							</div> *@
+                        </div>
+						
+                    </div>
+                </div>
+            </div>
+            <div id="ContentNews" class="tabcontent">
+				<div class="portlet box blue" style="height: calc(100% - 0px);overflow: clip;">
+					<div class="portlet-title">
+						<div class="caption" style="padding: 10px 0 0px 0;width: calc(100% - 20px);">
+							<i class="fa fa-gift"></i>Tin tức
+						</div>
+
+						<div class="tools">
+							<a href="" class="fullscreen">
+							</a>
+						</div>
+
+					</div>
+					<div class="portlet-body" style="height: calc(100% - 35px) !important;overflow:auto">
+						<div ng-repeat="x in Articles">
+							<!-- BEGIN Portlet PORTLET-->
+							<div class="portlet light bg-inverse">
+								<div class="item-details">
+									<img class="avatar" ng-src="{{x.Avatar}}" ng-if="x.Avatar != null" alt="">
+									<a href="" class="item-name primary-link">{{x.UserName}}</a>
+									<span class="item-label">{{x.DateCreated | TimingAgo}} ago</span>
+								</div>
+								<div class="portlet-title">
+									<div class="caption font-green-sharp">
+										<i class="icon-speech font-green-sharp"></i>
+										<span class="caption-subject bold uppercase"> {{x.Title}}</span>
+										<span class="caption-helper">{{x.DateCreated	 | date: 'dd-MM-yyyy HH:mm:ss'}}</span>
+									</div>
+									<div class="tools">
+										<a href="" class="collapse">
+										</a>
+										<a href="" class="fullscreen">
+										</a>
+									</div>
+									<div class="actions">
+										<a data-toggle="modal" href="#Popup_EditArticle" ng-click="ShowEditArticle(x)" href="javascript:;" class="btn btn-circle btn-default btn-sm" title="@ONE_WEB.Resources.MyResources.GetResourceByKey("Edit", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)">
+											<i class="fa fa-pencil"></i>
+										</a>
+									</div>
+								</div>
+								<div class="portlet-body">
+									<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto;">
+										<div class="scroller" style="overflow: scroll; width: auto;" data-initialized="1" ng-bind-html="x.Content | trust">
+											&nbsp;
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- END GRID PORTLET-->
+						</div>
+
+						<div class="row" ng-if="Articles.length > 0">
+							<div class="col-md-5 col-sm-12">
+								<div class="dataTables_info" id="sample_1_info" role="status" aria-live="polite">
+									{{FromRowArticle}} @ONE_WEB.Resources.MyResources.GetResourceByKey("To", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value) {{ToRowArticle}} @ONE_WEB.Resources.MyResources.GetResourceByKey("Of", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value) {{TotalRowArticle}} @ONE_WEB.Resources.MyResources.GetResourceByKey("Entries", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)
+									<span>
+										<span class="seperator" style="padding-right:2px">|</span>
+										@ONE_WEB.Resources.MyResources.GetResourceByKey("View", HttpContextAccessor.HttpContext?.User.FindFirst("Culture")?.Value)
+										<select id="selRecordArticle" ng-init="10" ng-model="PageSizeArticle" ng-change="GetArticles(1)" name="datatable_history_length" aria-controls="datatable_history" class="form-control input-xsmall input-sm input-inline">
+											<option value="" selected hidden />
+											<option ng-repeat="item in ListPageSize"
+													ng-selected="item.Id == 10" value="{{item.Id}}">
+												{{item.Text}}
+											</option>
+										</select>
+									</span>
+								</div>
+							</div>
+							<div class="col-md-7 col-sm-12">
+								<div class="dataTables_paginate paging_bootstrap_full_number">
+									<ul class="pagination" id="pagerArticle">
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+			<div id="ContentDiscuss" class="tabcontent">
+				<div class="portlet box blue" style="height: calc(100% - 0px);overflow: clip;">
+					<div class="portlet-title">
+						<div class="caption" style="padding: 10px 0 0px 0;width: calc(100% - 20px);">
+							<i class="fa fa-gift"></i>Thảo luận
+						</div>
+
+						<div class="tools">
+							<a href="" class="fullscreen">
+							</a>
+						</div>
+
+					</div>
+					<div class="portlet-body" style="height: calc(100% - 35px) !important;overflow:auto">
+						
+					</div>
+				</div>
+            </div>
+            
+        </div>
+        <div class="tab" id="tabRight">
+            <button class="tablinks" onclick="openCity(event, 'Watchlist')" id="tabWatchlist">Danh mục</button>
+            <button class="tablinks" onclick="openCity(event, 'News')" id="tabValue">Tin tức</button>
+			<button class="tablinks" onclick="openCity(event, 'Discuss')" id="tabDiscuss">Thảo luận</button>
+        </div>
+    </div>
+    
+	@await Html.PartialAsync("../Stock/_Partial_Stock.cshtml")
+
+</div>
+
+<script src="~/assets/global/plugins/bootstrap-summernote/summernote.min.js" asp-append-version="true"></script>
+@* <script type="text/javascript" src="~/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script> *@
+<script type="text/javascript" src="~/assets/global/plugins/select2/select2.min.js"></script>
+<script src="~/assets/admin/pages/scripts/components-editors.js?a=5" asp-append-version="true"></script>
+<script src="~/assets/admin/pages/scripts/charts-flotcharts.js?a=1"></script>
+<script src="~/assets/admin/pages/scripts/components-jqueryui-sliders.js?a=7"></script>
+
+<script src="~/assets/global/plugins/ion.rangeslider/js/ion-rangeSlider/ion.rangeSlider.min.js"></script>
+<script src="~/assets/admin/pages/scripts/components-ion-sliders.js?a=5"></script>
+
+<script src="~/js/HighCharts/stock/highstock.js"></script>
+<script type="text/javascript" src="~/js/HighCharts/stock/drag-panes.js"></script>
+
+<script src="~/js/HighCharts/modules/series-label.js"></script>
+<script src="~/js/HighCharts/modules/annotations.js"></script>
+
+<script type="text/javascript" src="~/js/HighCharts/stock/indicators.js"></script>
+<script type="text/javascript" src="~/js/HighCharts/stock/bollinger-bands.js"></script>
+<script type="text/javascript" src="~/js/HighCharts/stock/ema.js"></script>
+
+<script type="text/javascript" src="~/js/HighCharts/stock/annotations-advanced.js"></script>
+
+<script type="text/javascript" src="~/js/HighCharts/stock/full-screen.js"></script>
+<script type="text/javascript" src="~/js/HighCharts/stock/price-indicator.js"></script>
+<script type="text/javascript" src="~/js/HighCharts/stock/stock-tools.js"></script>
+@* <script src="https://code.highcharts.com/stock/indicators/rsi.js"></script> *@
+
+@* <script type="text/javascript" src="~/lib/jquery/jquery.fixedheadertable.js"></script> *@
+
+<script type="text/javascript" src="~/lib/freeze-table.js"></script>
+
+<script>
+    var Highstock = window.Highcharts;
+    window.Highcharts = null;
+</script>
+
+<script src="~/js/HighCharts/treemap/highcharts.js"></script>
+<script src="~/js/HighCharts/treemap/highcharts-more.js"></script>
+<script src="~/js/HighCharts/modules/treemap.js"></script>
+<script src="~/js/HighCharts/modules/data.js"></script>
+<script src="~/js/HighCharts/modules/exporting.js"></script>
+<script src="~/js/HighCharts/modules/offline-exporting.js"></script>
+<script src="~/js/HighCharts/modules/accessibility.js"></script>
+<script src="~/js/HighCharts/modules/coloraxis.js"></script>
+<script>
+	var Highmap = window.Highcharts;
+	window.Highcharts = null;
+</script>
+
+<script src="~/js/HighCharts/highcharts.js?a=2"></script>
+<script src="~/js/HighCharts/highcharts-more.js"></script>
+<script src="~/js/HighCharts/bullet.js"></script>
+<script src="~/js/HighCharts/solid-gauge.js"></script> 
+<script src="~/js/HighCharts/full-screen.js"></script>
+
+<script type="text/javascript" src="~/charting_library/charting_library.min.js"></script>
+<script type="text/javascript" src="~/datafeeds/udf/dist/polyfills.js"></script>
+<script type="text/javascript" src="~/datafeeds/udf/dist/bundle.js"></script>
+<script src="~/js/Stock.js?a=5"></script>
+
+<script>
+    // $('#mnStock').addClass("active");
+    // $('#mnRecommendations').addClass("active");
+	jQuery(document).ready(function () {
+		ComponentsjQueryUISliders.init();
+		ComponentsIonSliders.init();
+		//$("#slider-range-date-biendong").slider('value', 2);
+
+		// $('#irs-2 .irs-from').append('(min 1w)');
+		// $('#irs-2 .irs-to').append('(max 1w)');
+		
+		ComponentsEditors.init();
+
+		$("#Popup_AddRecommendationsPortfolio, #Popup_AddArticle").draggable({
+			handle: ".modal-header"
+		});
+
+		$("#Popup_Stock").draggable({
+			handle: ".modal-header"
+		});
+
+		var top = $('#splitMarketMap').position().top;
+		//var top = ('#splitMarketMap').outerHeight();
+		//alert(top);
+		// console.log('aaa');
+		// console.log($(window).height());
+		// console.log(top);
+		var second_top = $('#second_top').height() + 30;
+		$(".PieChart_Stocks").css('height', second_top - 20 + "px");
+		$("#chart_DailyActiveReport").css('height', second_top - 20 + "px");
+		$("#chart_Fluctuation").css('height', ($(document).height() - 120 - top) + "px");
+
+		$("#chart_CompareMultipleSeries").css('height', second_top - 30 + "px");
+		$("#chart_RelativeRotationGraph").css('height', ($(document).height() - 90 - top) + "px");
+		$("#chart_BanDo").css('height', ($(document).height() - 50 - top) + "px");
+		//alert($(document).height());
+
+		
+	});
+
+	(function (H) {
+		const {
+			addEvent
+		} = H;
+
+		H.wrap(H.Tick.prototype, 'createLabel', function (proceed) {
+			const tick = this,
+				label = proceed.apply(this, Array.prototype.slice.call(arguments, 1));
+
+			if (label) {
+				addEvent(label.element, 'click', function () {
+					tick.axis.options.labels.events.click.call(tick);
+				});
+			}
+
+			return label;
+		});
+
+	}(Highcharts))
+
+
+</script>

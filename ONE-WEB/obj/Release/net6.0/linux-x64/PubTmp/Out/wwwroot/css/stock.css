@@ -1,0 +1,430 @@
+.page-portlet-fullscreen > .navbar-fixed-top {
+    z-index: 0 !important;
+}
+
+.splitter {
+    width: 100%;
+    height: calc(100% - 50px);
+    position: fixed;
+    display: flex;
+    background-color: #F1F3FA;
+    /* padding-bottom: 7px; */
+}
+
+#separator, #separator2 {
+    cursor: col-resize;
+    background-color: #fff !important;
+    background: url(/assets/global/img/vsizegrip.png) center center no-repeat #aaa;
+    width: 2px;
+    height: 100%;
+    /* Prevent the browser's built-in drag from interfering */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#first {
+    width: 25%;
+    height: 100%;
+    min-width: 10px;
+    margin: 0px;
+}
+
+#second {
+    width: 55%;
+    height: 100%;
+    min-width: 10px;
+    margin: 0px;
+}
+
+#third {
+    width: 20%;
+    height: 100%;
+    min-width: 10px;
+    margin: 0px;
+}
+
+/* Style the tab */
+.tab {
+    float: right;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+    /* Style the buttons inside the tab */
+    .tab button {
+        display: block;
+        background-color: inherit;
+        color: black;
+        margin: 45px -43px 70px -44px;
+        width: 120px;
+        border: none;
+        outline: none;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+        transform: rotate(90deg);
+        padding: 2px 10px 5px 0px;
+    }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    /*  padding: 5px 5px; */
+    width: 100%;
+    border-left: none;
+    height: 100%;
+}
+
+.portlet.box > .portlet-body {
+    height: calc(100% - 35px) !important;
+}
+
+.portlet-fullscreen > .portlet-body > .slimScrollDiv {
+    height: 100% !important;
+}
+
+    .portlet-fullscreen > .portlet-body > .slimScrollDiv > .scroller {
+        height: 100% !important;
+    }
+
+.bg-inverse > .portlet-body > .slimScrollDiv {
+    height: 200px;
+}
+
+    .bg-inverse > .portlet-body > .slimScrollDiv > .scroller {
+        height: 200px;
+    }
+
+.modal .modal-dialog {
+    z-index: 10071 !important;
+}
+
+.portlet.box > .portlet-title > .caption {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 20px);
+}
+
+.index-increase {
+    color: #0bdf39;
+}
+
+.index-decrease {
+    color: #ff0017;
+}
+
+.index-sideways {
+    color: #dfba49;
+}
+
+.highcharts-figure,
+.highcharts-data-table table {
+    min-width: 320px;
+    max-width: 660px;
+    margin: 0em auto;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin: 0px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 2.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    /* padding: 0.5em; */
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    /* padding: 0.5em; */
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+.highcharts-description {
+    /* margin: 0.3rem 10px; */
+}
+
+.dropdown > .dropdown-menu.pull-left::before, .dropdown-toggle > .dropdown-menu.pull-left::before, .btn-group > .dropdown-menu.pull-left::before {
+    left: 9px !important;
+    right: unset !important;
+}
+
+.dropdown > .dropdown-menu.pull-left::after, .dropdown-toggle > .dropdown-menu.pull-left::after, .btn-group > .dropdown-menu.pull-left::after {
+    left: 10px !important;
+    right: unset !important;
+}
+
+.portlet.box.blue > .portlet-title > .actions .btn-default {
+    border: 0px solid #95c9ed !important;
+}
+
+    .portlet.box.blue > .portlet-title > .actions .btn-default : hover {
+        border: 0px solid #95c9ed !important;
+    }
+
+.requiresjcrop > .btn {
+    padding: 3px 5px;
+}
+
+.btn + .btn {
+    margin-left: 2px !important;
+}
+
+.ui-slider-horizontal {
+    height: .3em !important;
+}
+
+.ui-widget-header {
+    background: no-repeat !important;
+}
+
+.ui-slider .ui-slider-handle {
+    width: 0.4em;
+    height: 0.8em;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -4px !important;
+    margin-left: 0em !important;
+}
+
+.ui-slider .ui-slider-range {
+    background-color: #bbb !important;
+}
+
+.bg-purple {
+    border-color: #999 !important;
+}
+
+.btn.default {
+    background-color: transparent !important;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    a.active {
+        font-weight: 700;
+    }
+
+.irs-line, .irs-diapason {
+    height: 6px !important;
+}
+
+.irs-slider {
+    width: 7px !important;
+    height: 20px !important;
+    top: 19px !important;
+}
+
+.highcharts-point-down {
+    fill: #ff4242;
+    stroke: #ff4242;
+}
+
+.highcharts-candlestick-series .highcharts-point-down {
+    fill: #ff4242;
+    stroke: #ff4242;
+}
+
+.highcharts-candlestick-series .highcharts-point-up {
+    fill: #51af7b;
+    stroke: #51af7b;
+}
+
+.highcharts-point-up {
+    fill: #51af7b;
+    stroke: #51af7b;
+}
+
+.hc-cat-title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#PieChart_Stocks .highcharts-label > text {
+    font-size: 1.1em !important;
+    font-weight: normal !important;
+}
+
+#tv_chart_index .highcharts-axis-resizer {
+    stroke-width: 1px !important;
+}
+
+/*-------- start slider ---------*/
+
+.bars-container {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.loading-bar {
+    --bar-height: 20px;
+    position: relative;
+    width: 20%;
+    height: 5px;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+    .loading-bar::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        --background: red;
+    }
+
+.multistepSlider > .bars-container > .loading-bar:nth-child(1) {
+    background-color: #df1801;
+}
+
+.multistepSlider > .bars-container > .loading-bar:nth-child(2) {
+    background-color: #d98407;
+}
+
+.multistepSlider > .bars-container > .loading-bar:nth-child(3) {
+    background-color: #aaa235;
+}
+
+.multistepSlider > .bars-container > .loading-bar:nth-child(4) {
+    background-color: #1ba802;
+}
+
+.multistepSlider > .bars-container > .loading-bar:nth-child(5) {
+    background-color: #007e3e;
+}
+
+.slidecontainer {
+    width: 100%;
+    position: relative;
+}
+
+.slider-stock {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    background: transparent;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    position: absolute;
+    margin-top: -5px;
+    margin-left: 0px;
+}
+
+    .slider-stock:hover {
+        opacity: 1;
+    }
+
+    .slider-stock::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 0px;
+        height: 0px;
+        background: transparent;
+        cursor: pointer;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid #555;
+        border-bottom: 0px solid transparent;
+    }
+
+    .slider-stock::-moz-range-thumb {
+        width: 0px;
+        height: 0px;
+        background: transparent;
+        cursor: pointer;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid #555;
+        border-bottom: 0px solid transparent;
+    }
+
+.slider-stock-2 {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-left: 0px;
+}
+
+    .slider-stock-2:hover {
+        opacity: 1;
+    }
+
+    .slider-stock-2::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 0px;
+        height: 0px;
+        background: #d3d3d3;
+        cursor: pointer;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid #555;
+        border-bottom: 0px solid transparent;
+    }
+
+    .slider-stock-2::-moz-range-thumb {
+        width: 0px;
+        height: 0px;
+        background: #d3d3d3;
+        cursor: pointer;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid #555;
+        border-bottom: 0px solid transparent;
+    }
+/*-------- end slider ---------*/
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    padding: 4px 8px 4px 8px !important;
+}
