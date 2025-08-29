@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Publish\API</_PublishTargetUrl>
+    <History>True|2025-08-15T02:16:12.1069760Z||;True|2025-02-21T21:00:41.1774191+07:00||;True|2023-12-25T20:02:06.9609417+07:00||;True|2023-12-25T19:58:57.8072764+07:00||;True|2023-12-25T19:55:17.1755683+07:00||;True|2022-09-15T14:59:51.3427358+07:00||;True|2022-09-15T14:59:11.1974378+07:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

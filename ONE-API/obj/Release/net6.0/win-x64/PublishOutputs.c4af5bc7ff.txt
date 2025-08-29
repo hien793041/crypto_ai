@@ -1,0 +1,17 @@
+D:\Projects\ONE\ONE-API\obj\Release\net6.0\win-x64\PubTmp\Out\ONE-API.exe
+D:\Projects\ONE\ONE-API\obj\Release\net6.0\win-x64\PubTmp\Out\appsettings.Development.json
+D:\Projects\ONE\ONE-API\obj\Release\net6.0\win-x64\PubTmp\Out\appsettings.json
+D:\Projects\ONE\ONE-API\obj\Release\net6.0\win-x64\PubTmp\Out\ONE-API.dll
+D:\Projects\ONE\ONE-API\obj\Release\net6.0\win-x64\PubTmp\Out\ONE-API.deps.json
+D:\Projects\ONE\ONE-API\obj\Release\net6.0\win-x64\PubTmp\Out\ONE-API.runtimeconfig.json
+D:\Projects\ONE\ONE-API\obj\Release\net6.0\win-x64\PubTmp\Out\ONE-API.pdb
+D:\Projects\ONE\ONE-API\obj\Release\net6.0\win-x64\PubTmp\Out\Microsoft.OpenApi.dll
+D:\Projects\ONE\ONE-API\obj\Release\net6.0\win-x64\PubTmp\Out\Newtonsoft.Json.dll
+D:\Projects\ONE\ONE-API\obj\Release\net6.0\win-x64\PubTmp\Out\Npgsql.dll
+D:\Projects\ONE\ONE-API\obj\Release\net6.0\win-x64\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+D:\Projects\ONE\ONE-API\obj\Release\net6.0\win-x64\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Projects\ONE\ONE-API\obj\Release\net6.0\win-x64\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Projects\ONE\ONE-API\obj\Release\net6.0\win-x64\PubTmp\Out\Entity.dll
+D:\Projects\ONE\ONE-API\obj\Release\net6.0\win-x64\PubTmp\Out\NTS.Logging.File.dll
+D:\Projects\ONE\ONE-API\obj\Release\net6.0\win-x64\PubTmp\Out\NTS.Logging.File.pdb
+D:\Projects\ONE\ONE-API\obj\Release\net6.0\win-x64\PubTmp\Out\Entity.pdb

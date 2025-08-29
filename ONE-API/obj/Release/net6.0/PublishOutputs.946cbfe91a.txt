@@ -1,0 +1,12 @@
+D:\Projects\Medical-HIS\HIS-API\obj\Release\net6.0\PubTmp\Out\HIS-API.exe
+D:\Projects\Medical-HIS\HIS-API\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+D:\Projects\Medical-HIS\HIS-API\obj\Release\net6.0\PubTmp\Out\appsettings.json
+D:\Projects\Medical-HIS\HIS-API\obj\Release\net6.0\PubTmp\Out\HIS-API.dll
+D:\Projects\Medical-HIS\HIS-API\obj\Release\net6.0\PubTmp\Out\HIS-API.deps.json
+D:\Projects\Medical-HIS\HIS-API\obj\Release\net6.0\PubTmp\Out\HIS-API.runtimeconfig.json
+D:\Projects\Medical-HIS\HIS-API\obj\Release\net6.0\PubTmp\Out\HIS-API.pdb
+D:\Projects\Medical-HIS\HIS-API\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+D:\Projects\Medical-HIS\HIS-API\obj\Release\net6.0\PubTmp\Out\Npgsql.dll
+D:\Projects\Medical-HIS\HIS-API\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+D:\Projects\Medical-HIS\HIS-API\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Projects\Medical-HIS\HIS-API\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
