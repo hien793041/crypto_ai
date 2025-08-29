@@ -1,0 +1,72 @@
+2025-03-12T16:11:41.2976320+07:00	INFO	[ONE_Services.Worker]	[0]	{"SResult":{"C":0,"D":"{\"Exponent\":\"AQAB\",\"Modulus\":\"vWfyWQm0sgW28w3tUAzUtBkWH84t337N2Mm1DVHt67U2qL7bK08Laf6DBEfgjgvmcivQAMXOUaaQOLYp7uJv3w==\"}"}}
+2025-03-12T16:11:48.8171615+07:00	INFO	[ONE_Services.Worker]	[0]	Worker running at: 03/12/2025 16:11:48 +07:00
+2025-03-13T14:06:21.9226389+07:00	FAIL	[ONE_Services.Worker]	[0]	Bad Data.Internal.Cryptography.CryptoThrowHelper+WindowsCryptographicException: Bad Data.
+   at Internal.NativeCrypto.CapiHelper.ToKeyBlob(RSAParameters rsaParameters)
+   at System.Security.Cryptography.RSACryptoServiceProvider.ImportParameters(RSAParameters parameters)
+   at ONE_Services.Handlers.RSA.RSAEncrypt(Stream input, RSAParameters pair) in D:\Projects\ONE\ONE-Services\Handlers\RSA.cs:line 16
+   at ONE_Services.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\Projects\ONE\ONE-Services\Worker.cs:line 63
+
+2025-03-13T14:06:21.9266483+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2025-03-13T14:06:21.9284531+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2025-03-13T14:06:21.9321639+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-Services
+2025-03-17T16:07:51.4915163+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2025-03-17T16:07:51.5026147+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2025-03-17T16:07:51.5055882+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-Services
+2025-03-18T09:05:46.7069327+07:00	WARN	[ONE_Services.Worker]	[0]	RPSoft Login: Success
+2025-03-19T19:42:16.2212002+07:00	WARN	[ONE_Services.Worker]	[0]	ACB: {"Exchange":"HSX","Type":"STOCK","Name":"NHTM CP Ã ChÃ¢u","NameEn":"Asia Commercial Joint Stock Bank","ListedEpochDate":"2020-11-20T00:00:00Z","ListedVol":"4466657912","UnderlyingSymbol":null,"LastTradingEpochDate":"0001-01-01T00:00:00","MaturityEpochDate":"0001-01-01T00:00:00","CwType":"","CwStyle":"","ExerciseRatio":null,"ExercisePrice":"0","IssuerName":null,"Store":"stock_update","Code":"ACB"}
+2025-03-21T16:13:46.0252385+07:00	FAIL	[ONE_Services.Worker]	[0]	Error reading JObject from JsonReader. Path '', line 0, position 0.Newtonsoft.Json.JsonReaderException: Error reading JObject from JsonReader. Path '', line 0, position 0.
+   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+   at ONE_Services.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\Projects\ONE\ONE-Services\Worker.cs:line 63
+
+2025-03-21T16:13:46.0335399+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2025-03-21T16:13:46.0363162+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2025-03-21T16:13:46.0394378+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-Services
+2025-03-23T09:28:52.0673945+07:00	FAIL	[ONE_Services.Worker]	[0]	Value cannot be null. (Parameter 's')System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.IO.StringReader..ctor(String s)
+   at ONE_Services.Handlers.Utils.ParseCSV(String csv) in D:\Projects\ONE\ONE-Services\Handlers\Utils.cs:line 25
+   at ONE_Services.RPSoft.DAL.GetStockData(String& version) in D:\Projects\ONE\ONE-Services\RPSoft\DAL.cs:line 117
+   at ONE_Services.Worker.Process_StockData() in D:\Projects\ONE\ONE-Services\Worker.cs:line 469
+
+2025-03-23T09:33:17.0531302+07:00	FAIL	[ONE_Services.Worker]	[0]	Object reference not set to an instance of an object.System.NullReferenceException: Object reference not set to an instance of an object.
+   at ONE_Services.RPSoft.DAL.GetStockData(String& version) in D:\Projects\ONE\ONE-Services\RPSoft\DAL.cs:line 107
+
+2025-03-23T09:35:19.7043318+07:00	FAIL	[ONE_Services.Worker]	[0]	Value cannot be null. (Parameter 's')System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.IO.StringReader..ctor(String s)
+   at ONE_Services.Handlers.Utils.ParseCSV(String csv) in D:\Projects\ONE\ONE-Services\Handlers\Utils.cs:line 25
+   at ONE_Services.RPSoft.DAL.GetStockData(String& version) in D:\Projects\ONE\ONE-Services\RPSoft\DAL.cs:line 118
+
+2025-03-23T10:13:49.9445474+07:00	FAIL	[ONE_Services.Worker]	[0]	Value cannot be null. (Parameter 's')System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.IO.StringReader..ctor(String s)
+   at ONE_Services.Handlers.Utils.ParseCSV(String csv) in D:\Projects\ONE\ONE-Services\Handlers\Utils.cs:line 25
+   at ONE_Services.RPSoft.DAL.GetIndexData(String& version) in D:\Projects\ONE\ONE-Services\RPSoft\DAL.cs:line 167
+
+2025-03-24T17:52:45.6049438+07:00	FAIL	[ONE_Services.Worker]	[0]	Object reference not set to an instance of an object.System.NullReferenceException: Object reference not set to an instance of an object.
+   at ONE_Services.RPSoft.DAL.Login() in D:\Projects\ONE\ONE-Services\RPSoft\DAL.cs:line 63
+
+2025-03-26T10:59:36.7355288+07:00	FAIL	[ONE_Services.Worker]	[0]	The directory name is invalid. : 'D:\Projects\CungDauTu\Data\EOD\A32-20250325.csv'System.IO.IOException: The directory name is invalid. : 'D:\Projects\CungDauTu\Data\EOD\A32-20250325.csv'
+   at System.IO.FileSystem.RemoveDirectoryInternal(String fullPath, Boolean topLevel, Boolean allowDirectoryNotEmpty)
+   at System.IO.FileSystem.RemoveDirectory(String fullPath, Boolean recursive)
+   at System.IO.Directory.Delete(String path)
+   at ONE_Services.RPSoft.DAL.GetEODData_CSV() in D:\Projects\ONE\ONE-Services\RPSoft\DAL.cs:line 320
+
+2025-03-26T10:59:36.7860653+07:00	FAIL	[ONE_Services.Worker]	[0]	The directory name is invalid. : 'D:\Projects\CungDauTu\Data\1M\A32-20250325.csv'System.IO.IOException: The directory name is invalid. : 'D:\Projects\CungDauTu\Data\1M\A32-20250325.csv'
+   at System.IO.FileSystem.RemoveDirectoryInternal(String fullPath, Boolean topLevel, Boolean allowDirectoryNotEmpty)
+   at System.IO.FileSystem.RemoveDirectory(String fullPath, Boolean recursive)
+   at System.IO.Directory.Delete(String path)
+   at ONE_Services.RPSoft.DAL.GetM1Data_CSV() in D:\Projects\ONE\ONE-Services\RPSoft\DAL.cs:line 363
+
+2025-03-26T10:59:36.8291666+07:00	FAIL	[ONE_Services.Worker]	[0]	The directory name is invalid. : 'D:\Projects\CungDauTu\Data\1T\A32-20250325.csv'System.IO.IOException: The directory name is invalid. : 'D:\Projects\CungDauTu\Data\1T\A32-20250325.csv'
+   at System.IO.FileSystem.RemoveDirectoryInternal(String fullPath, Boolean topLevel, Boolean allowDirectoryNotEmpty)
+   at System.IO.FileSystem.RemoveDirectory(String fullPath, Boolean recursive)
+   at System.IO.Directory.Delete(String path)
+   at ONE_Services.RPSoft.DAL.GetTickData_CSV() in D:\Projects\ONE\ONE-Services\RPSoft\DAL.cs:line 402
+
+2025-03-26T10:59:36.8354590+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2025-03-26T10:59:36.8375560+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2025-03-26T10:59:36.8405599+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-Services
+2025-04-04T14:10:00.7032467+07:00	WARN	[ONE_Services.Worker]	[0]	RPSoft GetEODData: NotLoggedIn
+2025-04-04T14:11:23.8534021+07:00	WARN	[ONE_Services.Worker]	[0]	RPSoft GetEODData: NotLoggedIn
+2025-04-08T02:33:19.0457048+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2025-04-08T02:33:19.0626155+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2025-04-08T02:33:19.0668807+07:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: D:\Projects\ONE\ONE-Services
